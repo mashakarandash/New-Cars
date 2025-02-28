@@ -1,0 +1,13 @@
+https://api.figma.com/v1/images/T7ESrBfAfrX2kdYccQHK21?ids=230:31,230:40,230:41,230:49,230:50,230:55,230:59&format=png&scale=4
+{
+    "err": null,
+    "images": {
+        "230:31": "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/59cdce3c-d20c-443f-bc6a-3e8884064d36",
+        "230:40": "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/0d719513-43cb-4497-b6c9-c8e36d4c36e9",
+        "230:41": "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/3bdab610-4b3f-46b6-9440-370b13caae7b",
+        "230:49": "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/f7f57ab2-c9ed-46ea-ad8f-dce0837e0159",
+        "230:50": "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/a425f545-ca53-48c7-9d47-d3ec4ef96dd8",
+        "230:55": "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/3120ff9a-980e-4dcd-b3f0-dec0df42ada6",
+        "230:59": "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/b401930a-4921-4a9f-9d35-62743870e916"
+    }
+}

@@ -1,0 +1,474 @@
+https://api.figma.com/v1/files/T7ESrBfAfrX2kdYccQHK21/nodes?ids=2:56,2:58,2:63&geometry=paths&plugin_data=shared
+{
+    "name": "cars ux/ui",
+    "lastModified": "2025-01-23T13:14:49Z",
+    "thumbnailUrl": "https://s3-alpha.figma.com/thumbnails/cbe1c94c-9c2c-4f9b-af39-1a33fc8b850c?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3O4YIXNR%2F20250123%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250123T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=59785b0fb72f006eda2f7f75092161c7deabadf2ac68909874ffd9b8c1312232",
+    "version": "2176795843105341958",
+    "role": "owner",
+    "editorType": "figma",
+    "linkAccess": "view",
+    "nodes": {
+        "2:56": {
+            "document": {
+                "id": "2:56",
+                "name": "4.2 Проигрыш",
+                "type": "FRAME",
+                "scrollBehavior": "SCROLLS",
+                "children": [
+                    {
+                        "id": "2:57",
+                        "name": "IMG_3561",
+                        "type": "RECTANGLE",
+                        "scrollBehavior": "SCROLLS",
+                        "blendMode": "PASS_THROUGH",
+                        "fills": [
+                            {
+                                "blendMode": "NORMAL",
+                                "type": "IMAGE",
+                                "scaleMode": "FILL",
+                                "imageRef": "11d4ed43a410a073f7b4225fc2d01a898749111b"
+                            }
+                        ],
+                        "fillGeometry": [
+                            {
+                                "path": "M0 0L1290 0L1290 2796L0 2796L0 0Z",
+                                "windingRule": "NONZERO"
+                            }
+                        ],
+                        "strokes": [
+                            
+                        ],
+                        "strokeWeight": 1.0,
+                        "strokeAlign": "INSIDE",
+                        "strokeGeometry": [
+                            
+                        ],
+                        "absoluteBoundingBox": {
+                            "x": 8598.0,
+                            "y": 3647.0,
+                            "width": 1290.0,
+                            "height": 2796.0
+                        },
+                        "absoluteRenderBounds": {
+                            "x": 8598.0,
+                            "y": 3647.0,
+                            "width": 1290.0,
+                            "height": 2796.0
+                        },
+                        "preserveRatio": true,
+                        "constraints": {
+                            "vertical": "TOP",
+                            "horizontal": "LEFT"
+                        },
+                        "relativeTransform": [
+                            [
+                                1.0,
+                                0.0,
+                                96.0
+                            ],
+                            [
+                                0.0,
+                                1.0,
+                                93.0
+                            ]
+                        ],
+                        "size": {
+                            "x": 1290.0,
+                            "y": 2796.0
+                        },
+                        "effects": [
+                            
+                        ],
+                        "interactions": [
+                            
+                        ]
+                    }
+                ],
+                "blendMode": "PASS_THROUGH",
+                "clipsContent": true,
+                "background": [
+                    
+                ],
+                "fills": [
+                    
+                ],
+                "strokes": [
+                    
+                ],
+                "strokeWeight": 1.0,
+                "strokeAlign": "INSIDE",
+                "backgroundColor": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0,
+                    "a": 0.0
+                },
+                "fillGeometry": [
+                    {
+                        "path": "M0 0L1482 0L1482 2982L0 2982L0 0Z",
+                        "windingRule": "NONZERO"
+                    }
+                ],
+                "strokeGeometry": [
+                    
+                ],
+                "absoluteBoundingBox": {
+                    "x": 8502.0,
+                    "y": 3554.0,
+                    "width": 1482.0,
+                    "height": 2982.0
+                },
+                "absoluteRenderBounds": {
+                    "x": 8502.0,
+                    "y": 3554.0,
+                    "width": 1482.0,
+                    "height": 2982.0
+                },
+                "constraints": {
+                    "vertical": "TOP",
+                    "horizontal": "LEFT"
+                },
+                "relativeTransform": [
+                    [
+                        1.0,
+                        0.0,
+                        8502.0
+                    ],
+                    [
+                        0.0,
+                        1.0,
+                        3554.0
+                    ]
+                ],
+                "size": {
+                    "x": 1482.0,
+                    "y": 2982.0
+                },
+                "effects": [
+                    
+                ],
+                "interactions": [
+                    
+                ]
+            },
+            "components": {
+                
+            },
+            "componentSets": {
+                
+            },
+            "schemaVersion": 0,
+            "styles": {
+                
+            }
+        },
+        "2:58": {
+            "document": {
+                "id": "2:58",
+                "name": "2.2 Настройки",
+                "type": "FRAME",
+                "scrollBehavior": "SCROLLS",
+                "children": [
+                    {
+                        "id": "2:59",
+                        "name": "IMG_1740",
+                        "type": "RECTANGLE",
+                        "scrollBehavior": "SCROLLS",
+                        "blendMode": "PASS_THROUGH",
+                        "fills": [
+                            {
+                                "blendMode": "NORMAL",
+                                "type": "IMAGE",
+                                "scaleMode": "FILL",
+                                "imageRef": "30e2881c9f081249ae69822ec4655345d91bfe50"
+                            }
+                        ],
+                        "fillGeometry": [
+                            {
+                                "path": "M0 0L1866 0L1866 2581L0 2581L0 0Z",
+                                "windingRule": "NONZERO"
+                            }
+                        ],
+                        "strokes": [
+                            
+                        ],
+                        "strokeWeight": 1.0,
+                        "strokeAlign": "INSIDE",
+                        "strokeGeometry": [
+                            
+                        ],
+                        "absoluteBoundingBox": {
+                            "x": -8436.0,
+                            "y": -2523.0,
+                            "width": 1866.0,
+                            "height": 2581.0
+                        },
+                        "absoluteRenderBounds": {
+                            "x": -8156.0,
+                            "y": -2393.0,
+                            "width": 1350.0,
+                            "height": 2451.0
+                        },
+                        "preserveRatio": true,
+                        "constraints": {
+                            "vertical": "TOP",
+                            "horizontal": "LEFT"
+                        },
+                        "relativeTransform": [
+                            [
+                                1.0,
+                                0.0,
+                                -280.0
+                            ],
+                            [
+                                0.0,
+                                1.0,
+                                -130.0
+                            ]
+                        ],
+                        "size": {
+                            "x": 1866.0,
+                            "y": 2581.0
+                        },
+                        "effects": [
+                            
+                        ],
+                        "interactions": [
+                            
+                        ]
+                    }
+                ],
+                "blendMode": "PASS_THROUGH",
+                "clipsContent": true,
+                "background": [
+                    
+                ],
+                "fills": [
+                    
+                ],
+                "strokes": [
+                    
+                ],
+                "strokeWeight": 1.0,
+                "strokeAlign": "INSIDE",
+                "backgroundColor": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0,
+                    "a": 0.0
+                },
+                "fillGeometry": [
+                    {
+                        "path": "M0 0L1350 0L1350 2613L0 2613L0 0Z",
+                        "windingRule": "NONZERO"
+                    }
+                ],
+                "strokeGeometry": [
+                    
+                ],
+                "absoluteBoundingBox": {
+                    "x": -8156.0,
+                    "y": -2393.0,
+                    "width": 1350.0,
+                    "height": 2613.0
+                },
+                "absoluteRenderBounds": {
+                    "x": -8156.0,
+                    "y": -2393.0,
+                    "width": 1350.0,
+                    "height": 2613.0
+                },
+                "constraints": {
+                    "vertical": "TOP",
+                    "horizontal": "LEFT"
+                },
+                "relativeTransform": [
+                    [
+                        1.0,
+                        0.0,
+                        -8156.0
+                    ],
+                    [
+                        0.0,
+                        1.0,
+                        -2393.0
+                    ]
+                ],
+                "size": {
+                    "x": 1350.0,
+                    "y": 2613.0
+                },
+                "effects": [
+                    
+                ],
+                "interactions": [
+                    
+                ]
+            },
+            "components": {
+                
+            },
+            "componentSets": {
+                
+            },
+            "schemaVersion": 0,
+            "styles": {
+                
+            }
+        },
+        "2:63": {
+            "document": {
+                "id": "2:63",
+                "name": "2.3 Магазин скинов",
+                "type": "FRAME",
+                "scrollBehavior": "SCROLLS",
+                "children": [
+                    {
+                        "id": "2:64",
+                        "name": "IMG_1741",
+                        "type": "RECTANGLE",
+                        "scrollBehavior": "SCROLLS",
+                        "blendMode": "PASS_THROUGH",
+                        "fills": [
+                            {
+                                "blendMode": "NORMAL",
+                                "type": "IMAGE",
+                                "scaleMode": "FILL",
+                                "imageRef": "8520917713db1dd69466330c94429ae35e7995ed"
+                            }
+                        ],
+                        "fillGeometry": [
+                            {
+                                "path": "M0 0L1874 0L1874 2546L0 2546L0 0Z",
+                                "windingRule": "NONZERO"
+                            }
+                        ],
+                        "strokes": [
+                            
+                        ],
+                        "strokeWeight": 1.0,
+                        "strokeAlign": "INSIDE",
+                        "strokeGeometry": [
+                            
+                        ],
+                        "absoluteBoundingBox": {
+                            "x": -6579.0,
+                            "y": 4296.0,
+                            "width": 1874.0,
+                            "height": 2546.0
+                        },
+                        "absoluteRenderBounds": {
+                            "x": -6265.0,
+                            "y": 4376.0,
+                            "width": 1350.0,
+                            "height": 2466.0
+                        },
+                        "preserveRatio": true,
+                        "constraints": {
+                            "vertical": "TOP",
+                            "horizontal": "LEFT"
+                        },
+                        "relativeTransform": [
+                            [
+                                1.0,
+                                0.0,
+                                -314.0
+                            ],
+                            [
+                                0.0,
+                                1.0,
+                                -80.0
+                            ]
+                        ],
+                        "size": {
+                            "x": 1874.0,
+                            "y": 2546.0
+                        },
+                        "effects": [
+                            
+                        ],
+                        "interactions": [
+                            
+                        ]
+                    }
+                ],
+                "blendMode": "PASS_THROUGH",
+                "clipsContent": true,
+                "background": [
+                    
+                ],
+                "fills": [
+                    
+                ],
+                "strokes": [
+                    
+                ],
+                "strokeWeight": 1.0,
+                "strokeAlign": "INSIDE",
+                "backgroundColor": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0,
+                    "a": 0.0
+                },
+                "fillGeometry": [
+                    {
+                        "path": "M0 0L1350 0L1350 2613L0 2613L0 0Z",
+                        "windingRule": "NONZERO"
+                    }
+                ],
+                "strokeGeometry": [
+                    
+                ],
+                "absoluteBoundingBox": {
+                    "x": -6265.0,
+                    "y": 4376.0,
+                    "width": 1350.0,
+                    "height": 2613.0
+                },
+                "absoluteRenderBounds": {
+                    "x": -6265.0,
+                    "y": 4376.0,
+                    "width": 1350.0,
+                    "height": 2613.0
+                },
+                "constraints": {
+                    "vertical": "TOP",
+                    "horizontal": "LEFT"
+                },
+                "relativeTransform": [
+                    [
+                        1.0,
+                        0.0,
+                        -6265.0
+                    ],
+                    [
+                        0.0,
+                        1.0,
+                        4376.0
+                    ]
+                ],
+                "size": {
+                    "x": 1350.0,
+                    "y": 2613.0
+                },
+                "effects": [
+                    
+                ],
+                "interactions": [
+                    
+                ]
+            },
+            "components": {
+                
+            },
+            "componentSets": {
+                
+            },
+            "schemaVersion": 0,
+            "styles": {
+                
+            }
+        }
+    }
+}

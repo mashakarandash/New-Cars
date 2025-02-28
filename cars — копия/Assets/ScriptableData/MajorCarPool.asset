@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34e83a8e534f04fa88cb9e52f8741b75, type: 3}
+  m_Name: MajorCarPool
+  m_EditorClassIdentifier: 
+  _yellowCar: {fileID: 3770404105979263482, guid: 48071b3e445fd41baa3105ace6d0545b, type: 3}
+  _redCar: {fileID: 4755843959958150134, guid: 2a200ea121bd549ed820b7e4fe25305f, type: 3}
+  _blueCar: {fileID: -8710184043851128646, guid: 7327a7b731321425e86714f43ff6379d, type: 3}
+  _greenCar: {fileID: -4509396635734111296, guid: 58961d9bdbf8142e298de7b428ed1a3b, type: 3}
+  _policeCar: {fileID: -5277136933952493459, guid: f7633d18c7d54400d806bca7346c916a, type: 3}
+  _furgon: {fileID: 6881561867720953192, guid: 0f4810d61affa4dd2a644e5d32d4d564, type: 3}
+  _rainbowCar: {fileID: 9116410412973674704, guid: 138d04324642f49be88deb8b36db166c, type: 3}
+  _taxiCar: {fileID: 4755843959958150134, guid: 196f1958e42c54122b7975bdeb7e1259, type: 3}
+  AllCars: []
