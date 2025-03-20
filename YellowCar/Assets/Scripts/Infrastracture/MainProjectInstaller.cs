@@ -9,6 +9,7 @@ public class MainProjectInstaller : MonoInstaller
     {
         BindStorage();
         EventBus();
+        BindMasterSave();
     }
 
     private void EventBus()
@@ -24,6 +25,15 @@ public class MainProjectInstaller : MonoInstaller
     {
         Container
             .Bind<Storage>()
+            .FromNew()
+            .AsSingle()
+            .NonLazy();
+    }
+
+    private void BindMasterSave()
+    {
+        Container
+            .Bind<MasterSave>()
             .FromNew()
             .AsSingle()
             .NonLazy();

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.4439372, g: 0.49315345, b: 0.5721989, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -176,8 +176,10 @@ MonoBehaviour:
   _pointToMove: {fileID: 2117668859}
   _canCreateCar: 1
   _shouldOvertake: 1
+  _traficLight: {fileID: 0}
   PublicField: 100
   Directions: 2
+  CanCreateTaxiCar: 1
 --- !u!1 &73452291
 GameObject:
   m_ObjectHideFlags: 0
@@ -355,8 +357,10 @@ MonoBehaviour:
   _pointToMove: {fileID: 1730229261}
   _canCreateCar: 1
   _shouldOvertake: 1
+  _traficLight: {fileID: 0}
   PublicField: 100
   Directions: 1
+  CanCreateTaxiCar: 1
 --- !u!1 &293935131
 GameObject:
   m_ObjectHideFlags: 0
@@ -441,8 +445,10 @@ MonoBehaviour:
   _pointToMove: {fileID: 1708408094}
   _canCreateCar: 1
   _shouldOvertake: 1
+  _traficLight: {fileID: 0}
   PublicField: 100
   Directions: 2
+  CanCreateTaxiCar: 1
 --- !u!1 &310265397
 GameObject:
   m_ObjectHideFlags: 0
@@ -635,8 +641,10 @@ MonoBehaviour:
   _pointToMove: {fileID: 1624942413}
   _canCreateCar: 1
   _shouldOvertake: 1
+  _traficLight: {fileID: 0}
   PublicField: 100
   Directions: 1
+  CanCreateTaxiCar: 1
 --- !u!1 &385555494
 GameObject:
   m_ObjectHideFlags: 0
@@ -2075,8 +2083,10 @@ MonoBehaviour:
   _pointToMove: {fileID: 1728995085}
   _canCreateCar: 1
   _shouldOvertake: 1
+  _traficLight: {fileID: 0}
   PublicField: 100
   Directions: 1
+  CanCreateTaxiCar: 1
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -2323,8 +2333,10 @@ MonoBehaviour:
   _pointToMove: {fileID: 293935132}
   _canCreateCar: 1
   _shouldOvertake: 1
+  _traficLight: {fileID: 0}
   PublicField: 100
   Directions: 2
+  CanCreateTaxiCar: 1
 --- !u!1 &1143968677
 GameObject:
   m_ObjectHideFlags: 0
@@ -3609,6 +3621,63 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1651148921
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: d4fa1d173679343e0ac95d00c69910f5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -17298.693
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d4fa1d173679343e0ac95d00c69910f5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d4fa1d173679343e0ac95d00c69910f5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 27280.055
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d4fa1d173679343e0ac95d00c69910f5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d4fa1d173679343e0ac95d00c69910f5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d4fa1d173679343e0ac95d00c69910f5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d4fa1d173679343e0ac95d00c69910f5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d4fa1d173679343e0ac95d00c69910f5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d4fa1d173679343e0ac95d00c69910f5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d4fa1d173679343e0ac95d00c69910f5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d4fa1d173679343e0ac95d00c69910f5, type: 3}
+      propertyPath: m_Name
+      value: carsFinal1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d4fa1d173679343e0ac95d00c69910f5, type: 3}
 --- !u!1 &1664317874
 GameObject:
   m_ObjectHideFlags: 0
@@ -3724,6 +3793,86 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.33, y: 3.93, z: 12.27}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1691377324
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1691377327}
+  - component: {fileID: 1691377326}
+  - component: {fileID: 1691377325}
+  m_Layer: 0
+  m_Name: Infrastracture
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1691377325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1691377324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89715ad69b973a14899afa2c6730b30b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _scriptableObjectInstallers: []
+  _monoInstallers:
+  - {fileID: 1691377326}
+  _installerPrefabs: []
+  _autoRun: 1
+  OnPreInstall:
+    m_PersistentCalls:
+      m_Calls: []
+  OnPostInstall:
+    m_PersistentCalls:
+      m_Calls: []
+  OnPreResolve:
+    m_PersistentCalls:
+      m_Calls: []
+  OnPostResolve:
+    m_PersistentCalls:
+      m_Calls: []
+  _parentNewObjectsUnderSceneContext: 0
+  _contractNames: []
+  _parentContractNames: []
+--- !u!114 &1691377326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1691377324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 125891e0eec094b8c90ff8cc2183f80f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _levelGoal: {fileID: 86789846}
+  _carPoolData: {fileID: 11400000, guid: 613496a10c7804765850885ad184832c, type: 2}
+  _coinsChanger: {fileID: 2086838042}
+--- !u!4 &1691377327
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1691377324}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 625.7311, y: 1483.6718, z: -28.79415}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1708408093
 GameObject:
   m_ObjectHideFlags: 0
@@ -4100,8 +4249,10 @@ MonoBehaviour:
   _pointToMove: {fileID: 1925378920}
   _canCreateCar: 1
   _shouldOvertake: 1
+  _traficLight: {fileID: 0}
   PublicField: 100
   Directions: 1
+  CanCreateTaxiCar: 1
 --- !u!1 &1891898745
 GameObject:
   m_ObjectHideFlags: 0
@@ -4218,8 +4369,10 @@ MonoBehaviour:
   _pointToMove: {fileID: 389439483}
   _canCreateCar: 1
   _shouldOvertake: 1
+  _traficLight: {fileID: 0}
   PublicField: 100
   Directions: 2
+  CanCreateTaxiCar: 1
 --- !u!1 &1949600663
 GameObject:
   m_ObjectHideFlags: 0
@@ -4305,8 +4458,10 @@ MonoBehaviour:
   _pointToMove: {fileID: 1403304067}
   _canCreateCar: 1
   _shouldOvertake: 1
+  _traficLight: {fileID: 0}
   PublicField: 100
   Directions: 2
+  CanCreateTaxiCar: 1
 --- !u!1 &2086838040
 GameObject:
   m_ObjectHideFlags: 0
@@ -4541,8 +4696,10 @@ MonoBehaviour:
   _pointToMove: {fileID: 379075644}
   _canCreateCar: 1
   _shouldOvertake: 1
+  _traficLight: {fileID: 0}
   PublicField: 100
   Directions: 1
+  CanCreateTaxiCar: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -4566,3 +4723,5 @@ SceneRoots:
   - {fileID: 1803442986}
   - {fileID: 1143968678}
   - {fileID: 1664317876}
+  - {fileID: 1691377327}
+  - {fileID: 1651148921}

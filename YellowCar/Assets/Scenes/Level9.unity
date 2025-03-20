@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.4439372, g: 0.49315345, b: 0.5721989, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -437,6 +437,7 @@ MonoBehaviour:
   _traficLight: {fileID: 0}
   PublicField: 100
   Directions: 0
+  CanCreateTaxiCar: 1
 --- !u!1 &310265397
 GameObject:
   m_ObjectHideFlags: 0
@@ -2046,6 +2047,7 @@ MonoBehaviour:
   _traficLight: {fileID: 0}
   PublicField: 100
   Directions: 0
+  CanCreateTaxiCar: 1
 --- !u!1 &1174227782
 GameObject:
   m_ObjectHideFlags: 0
@@ -3483,6 +3485,86 @@ Transform:
   - {fileID: 1138597578}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1893750659
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1893750662}
+  - component: {fileID: 1893750661}
+  - component: {fileID: 1893750660}
+  m_Layer: 0
+  m_Name: Infrastracture
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1893750660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1893750659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89715ad69b973a14899afa2c6730b30b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _scriptableObjectInstallers: []
+  _monoInstallers:
+  - {fileID: 1893750661}
+  _installerPrefabs: []
+  _autoRun: 1
+  OnPreInstall:
+    m_PersistentCalls:
+      m_Calls: []
+  OnPostInstall:
+    m_PersistentCalls:
+      m_Calls: []
+  OnPreResolve:
+    m_PersistentCalls:
+      m_Calls: []
+  OnPostResolve:
+    m_PersistentCalls:
+      m_Calls: []
+  _parentNewObjectsUnderSceneContext: 0
+  _contractNames: []
+  _parentContractNames: []
+--- !u!114 &1893750661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1893750659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 125891e0eec094b8c90ff8cc2183f80f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _levelGoal: {fileID: 86789846}
+  _carPoolData: {fileID: 11400000, guid: 613496a10c7804765850885ad184832c, type: 2}
+  _coinsChanger: {fileID: 2086838042}
+--- !u!4 &1893750662
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1893750659}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 625.7311, y: 1483.6718, z: -28.79415}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1929310454
 GameObject:
   m_ObjectHideFlags: 0
@@ -3539,6 +3621,7 @@ MonoBehaviour:
   _traficLight: {fileID: 0}
   PublicField: 100
   Directions: 0
+  CanCreateTaxiCar: 1
 --- !u!1 &1973445529
 GameObject:
   m_ObjectHideFlags: 0
@@ -3626,6 +3709,7 @@ MonoBehaviour:
   _traficLight: {fileID: 0}
   PublicField: 100
   Directions: 0
+  CanCreateTaxiCar: 1
 --- !u!1 &2036833447
 GameObject:
   m_ObjectHideFlags: 0
@@ -3897,3 +3981,4 @@ SceneRoots:
   - {fileID: 1234657416}
   - {fileID: 1649985142}
   - {fileID: 333259191}
+  - {fileID: 1893750662}

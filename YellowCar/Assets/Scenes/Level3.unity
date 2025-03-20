@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.4439372, g: 0.49315345, b: 0.5721989, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -170,6 +170,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _transformPoint: {fileID: 565900014}
   _canBoostSpeed: 0
+  _shouldOvertake: 0
 --- !u!65 &42333999
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -244,8 +245,12 @@ MonoBehaviour:
   _minSpeed: 1
   _maxSpeed: 10
   _pointToMove: {fileID: 349813173}
+  _canCreateCar: 1
+  _shouldOvertake: 0
+  _traficLight: {fileID: 0}
   PublicField: 100
   Directions: 2
+  CanCreateTaxiCar: 1
 --- !u!1 &73452291
 GameObject:
   m_ObjectHideFlags: 0
@@ -417,6 +422,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _transformPoint: {fileID: 1403304067}
   _canBoostSpeed: 1
+  _shouldOvertake: 0
 --- !u!65 &140959425
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -485,6 +491,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _transformPoint: {fileID: 1457889662}
   _canBoostSpeed: 0
+  _shouldOvertake: 0
 --- !u!65 &254326287
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -590,8 +597,12 @@ MonoBehaviour:
   _minSpeed: 1
   _maxSpeed: 10
   _pointToMove: {fileID: 2021377473}
+  _canCreateCar: 1
+  _shouldOvertake: 0
+  _traficLight: {fileID: 0}
   PublicField: 100
   Directions: 2
+  CanCreateTaxiCar: 1
 --- !u!1 &310265397
 GameObject:
   m_ObjectHideFlags: 0
@@ -714,6 +725,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _transformPoint: {fileID: 140959423}
   _canBoostSpeed: 0
+  _shouldOvertake: 0
 --- !u!65 &349813175
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -735,6 +747,86 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.57, y: 1.49, z: 1.73}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &383762644
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 383762647}
+  - component: {fileID: 383762646}
+  - component: {fileID: 383762645}
+  m_Layer: 0
+  m_Name: Infrastracture
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &383762645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 383762644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89715ad69b973a14899afa2c6730b30b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _scriptableObjectInstallers: []
+  _monoInstallers:
+  - {fileID: 383762646}
+  _installerPrefabs: []
+  _autoRun: 1
+  OnPreInstall:
+    m_PersistentCalls:
+      m_Calls: []
+  OnPostInstall:
+    m_PersistentCalls:
+      m_Calls: []
+  OnPreResolve:
+    m_PersistentCalls:
+      m_Calls: []
+  OnPostResolve:
+    m_PersistentCalls:
+      m_Calls: []
+  _parentNewObjectsUnderSceneContext: 0
+  _contractNames: []
+  _parentContractNames: []
+--- !u!114 &383762646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 383762644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 125891e0eec094b8c90ff8cc2183f80f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _levelGoal: {fileID: 86789846}
+  _carPoolData: {fileID: 11400000, guid: 613496a10c7804765850885ad184832c, type: 2}
+  _coinsChanger: {fileID: 2086838042}
+--- !u!4 &383762647
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 383762644}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 625.7311, y: 1483.6718, z: -28.79415}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &385555494
 GameObject:
   m_ObjectHideFlags: 0
@@ -1301,6 +1393,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _transformPoint: {fileID: 1403304067}
   _canBoostSpeed: 1
+  _shouldOvertake: 0
 --- !u!65 &550499718
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1369,6 +1462,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _transformPoint: {fileID: 1403304067}
   _canBoostSpeed: 1
+  _shouldOvertake: 0
 --- !u!65 &565900016
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2428,8 +2522,12 @@ MonoBehaviour:
   _minSpeed: 1
   _maxSpeed: 10
   _pointToMove: {fileID: 254326285}
+  _canCreateCar: 1
+  _shouldOvertake: 0
+  _traficLight: {fileID: 0}
   PublicField: 100
   Directions: 2
+  CanCreateTaxiCar: 1
 --- !u!1 &1174227782
 GameObject:
   m_ObjectHideFlags: 0
@@ -2923,6 +3021,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _transformPoint: {fileID: 1403304067}
   _canBoostSpeed: 1
+  _shouldOvertake: 0
 --- !u!65 &1343502730
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3156,6 +3255,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _transformPoint: {fileID: 1403304067}
   _canBoostSpeed: 1
+  _shouldOvertake: 0
 --- !u!65 &1457889664
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3768,6 +3868,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _transformPoint: {fileID: 550499716}
   _canBoostSpeed: 0
+  _shouldOvertake: 0
 --- !u!65 &1757942263
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4072,8 +4173,12 @@ MonoBehaviour:
   _minSpeed: 1
   _maxSpeed: 10
   _pointToMove: {fileID: 1757942261}
+  _canCreateCar: 1
+  _shouldOvertake: 0
+  _traficLight: {fileID: 0}
   PublicField: 100
   Directions: 2
+  CanCreateTaxiCar: 1
 --- !u!1 &1989397753
 GameObject:
   m_ObjectHideFlags: 0
@@ -4127,8 +4232,12 @@ MonoBehaviour:
   _minSpeed: 1
   _maxSpeed: 15
   _pointToMove: {fileID: 42333997}
+  _canCreateCar: 1
+  _shouldOvertake: 0
+  _traficLight: {fileID: 0}
   PublicField: 100
   Directions: 2
+  CanCreateTaxiCar: 1
 --- !u!1 &2021377472
 GameObject:
   m_ObjectHideFlags: 0
@@ -4176,6 +4285,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _transformPoint: {fileID: 1343502728}
   _canBoostSpeed: 0
+  _shouldOvertake: 0
 --- !u!65 &2021377475
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4394,3 +4504,4 @@ SceneRoots:
   - {fileID: 1470520657}
   - {fileID: 1234657416}
   - {fileID: 1649985142}
+  - {fileID: 383762647}

@@ -1,0 +1,7 @@
+https://api.figma.com/v1/me
+{
+    "id": "1035528735285810991",
+    "email": "mary.karandash@gmail.com",
+    "handle": "Mariia",
+    "img_url": "https://www.gravatar.com/avatar/ada14c6b2e72f527bd355250c14e51f5?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_m_v2.png"
+}

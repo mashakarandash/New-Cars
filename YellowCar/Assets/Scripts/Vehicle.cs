@@ -26,6 +26,7 @@ public abstract class Vehicle : MonoBehaviour
 
     [SerializeField] private float _distanceBetweenCar;
     [SerializeField] private ParticleSystem _collisionParticle;
+    [SerializeField] private MeshRenderer _meshRenderer;
 
     private TraficLight _traficLight;
 
@@ -145,15 +146,15 @@ public abstract class Vehicle : MonoBehaviour
     public void ConvertCarInToYellowCar()
     {
         IsTemporaryYellowCar = true;
-        MeshRenderer meshRenderer = gameObject.GetComponent<MeshRenderer>();
-        _defaultColor = meshRenderer.material.color;
-        meshRenderer.material.color = Color.yellow;
+        
+        _defaultColor = _meshRenderer.material.color;
+        _meshRenderer.material.color = Color.yellow;
     }
 
     public void ConvertCarInToDefault()
     {
         IsTemporaryYellowCar = false;
-        MeshRenderer meshRenderer = gameObject.GetComponent<MeshRenderer>();
-        meshRenderer.material.color = _defaultColor;
+        
+        _meshRenderer.material.color = _defaultColor;
     }
 }
