@@ -81,7 +81,9 @@ public class CustomPool<T> where T : MonoBehaviour // T - Generic verible, ун�
 
             if (car is YellowCarBehavior yellowCar && car.isActiveAndEnabled)
             {
+                yellowCar.CanPlayTapAudio = false;
                 yellowCar.OnMouseDown();
+                yellowCar.CanPlayTapAudio = true;
             }
             car.gameObject.SetActive(false);
             

@@ -77,11 +77,11 @@ public class EndGameReward : MonoBehaviour
                 break;
                 
         }
-        LevelData levelData = _storage.LevelsInformation.FirstOrDefault(x => x.SceneID == _storage.CurrentLevelID);
-        levelData.IsLevelPast = true;
-        levelData.StarsInLevel = _rewardModificator;
-        _storage.NextSceneToUnlock = _storage.CurrentLevelID +1;
-        _masterSave.SaveData.SaveNewLevel(levelData);
+        //LevelData levelData = _storage.LevelsInformation.FirstOrDefault(x => x.SceneID == _storage.CurrentLevelID);
+        //levelData.IsLevelPast = true;
+        //levelData.StarsInLevel = _rewardModificator;
+        //_storage.NextSceneToUnlock = _storage.CurrentLevelID +1;
+        //_masterSave.SaveData.SaveNewLevel(levelData);
         _eventBus.ShowGainStars.Invoke(_rewardModificator);
         _rewardModificator = 1;
 

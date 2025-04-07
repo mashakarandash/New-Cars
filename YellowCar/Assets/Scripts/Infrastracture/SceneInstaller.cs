@@ -8,12 +8,14 @@ public class SceneInstaller : MonoInstaller
     [SerializeField] private LevelGoal _levelGoal;
     [SerializeField] private ScriptableObjectPoolData _carPoolData;
     [SerializeField] private CointsChanger _coinsChanger;
+    [SerializeField] private AudioSource _audioEffects;
 
     public override void InstallBindings()
     {
         BindLevelGoal();
         BindScriptableObjectPoolData();
         BindCoinsChanger();
+        BindAudioEffects();
     }
 
     public override void Start()
@@ -47,5 +49,15 @@ public class SceneInstaller : MonoInstaller
             .FromInstance(_coinsChanger)
             .AsSingle()
             .NonLazy();
+    }
+
+    private void BindAudioEffects()
+    {
+        Container
+            .Bind<AudioSource>()
+            .WithId("Effects")
+             .FromInstance(_audioEffects)
+             .AsCached()
+             .NonLazy();
     }
 }

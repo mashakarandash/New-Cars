@@ -16,6 +16,7 @@ public class CarBehavior : Vehicle
 
     public override void OnMouseDown()
     {
+        base.OnMouseDown();
         if (IsTemporaryYellowCar)
         {
             _eventBus.ScoreChanged.Invoke();

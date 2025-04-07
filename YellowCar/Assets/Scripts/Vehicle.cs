@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
-
+using Zenject;
 
 public abstract class Vehicle : MonoBehaviour
 {
@@ -14,23 +14,42 @@ public abstract class Vehicle : MonoBehaviour
     public int Index;
     public bool GreenLightDetected = true;
     public bool IsStilledByUFO;
+    public bool CanPlayTapAudio = true;
 
     private int _speed = 2;
     private bool _needOvertake;
     private Color _defaultColor;
 
     protected bool IsTemporaryYellowCar;
-
+    protected AudioSource AudioEffects;
     
+
     [SerializeField] public NavMeshAgent NavMeshAgent;
 
     [SerializeField] private float _distanceBetweenCar;
     [SerializeField] private ParticleSystem _collisionParticle;
     [SerializeField] private MeshRenderer _meshRenderer;
 
+    [SerializeField] protected AudioClip _yellowCarTapAudio;
+    [SerializeField] protected AudioClip _anotherCarTapAudio;
+
     private TraficLight _traficLight;
 
-    public abstract void OnMouseDown(); // встроенный метод юнити для унаследованный классов от Monobehavior, вызывается при нажатии на объект с колайдером на котором висит данный скрипn
+    public virtual void OnMouseDown()
+    {
+        if(CanPlayTapAudio)
+        {
+            if (IsTemporaryYellowCar)
+            {
+                PlayTapAudio(_yellowCarTapAudio);
+            }
+            else
+            {
+                PlayTapAudio(_anotherCarTapAudio);
+            }
+        }
+    }
+    // встроенный метод юнити для унаследованный классов от Monobehavior, вызывается при нажатии на объект с колайдером на котором висит данный скрипn
 
     public void SetSpeed(int speed) => _speed = speed; // установление скорости
         
@@ -46,11 +65,20 @@ public abstract class Vehicle : MonoBehaviour
         }
     }*/
 
+    [Inject]
+    public void Constract([Inject(Id = "Effects")]AudioSource audioEffects)
+    {
+        AudioEffects = audioEffects;
+    }
+
+    protected void PlayTapAudio(AudioClip tapClip)
+    {
+        AudioEffects.PlayOneShot(tapClip);
+    }
+
     public virtual void FixedUpdate() 
     {
        // Mooving();
-
-       
     }
 
     public void SetDestinationToPoint(Vector3 pointCoordinate, bool needOvertake)

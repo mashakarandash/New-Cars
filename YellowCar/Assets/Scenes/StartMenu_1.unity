@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4439372, g: 0.49315345, b: 0.5721989, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -123,6 +123,165 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &53092461
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 53092462}
+  - component: {fileID: 53092466}
+  - component: {fileID: 53092465}
+  - component: {fileID: 53092464}
+  - component: {fileID: 53092463}
+  m_Layer: 5
+  m_Name: 100
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &53092462
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 53092461}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1419576567}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.16900001, y: 0.18418121}
+  m_AnchorMax: {x: 0.61300004, y: 0.87122834}
+  m_AnchoredPosition: {x: 1.4999847, y: -1.9999695}
+  m_SizeDelta: {x: -15.988158, y: -10.320447}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &53092463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 53092461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: a71a587e828f14de68a4b1555ed755d1, type: 3}
+    m_FontSize: 24
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 1
+    m_MaxSize: 150
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 100
+--- !u!222 &53092464
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 53092461}
+  m_CullTransparentMesh: 1
+--- !u!114 &53092465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 53092461}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalFit: 2
+  m_VerticalFit: 2
+--- !u!114 &53092466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 53092461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18b42570416bdca4697b2749e5bf8c5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data:
+    id: 397:1552
+    formattedName: 100
+    spriteName: 
+    tags: c800000065000000
+    childIndexes: 
+    fcuInstance: {fileID: 1585133153}
+    gameObject: {fileID: 53092461}
+    transformData:
+      anchorMin: {x: 0, y: 0}
+      anchorMax: {x: 0, y: 0}
+      anchoredPosition: {x: 0, y: 0}
+      sizeDelta: {x: 0, y: 0, z: 0}
+      localRotation: {x: 0, y: 0, z: 0, w: 0}
+      localScale: {x: 0, y: 0, z: 0}
+    singleColor: {r: 0, g: 0, b: 0, a: 1}
+    spriteSize: {x: 0, y: 0}
+    size: {x: 42, y: 35}
+    position: {x: -3554, y: -2470}
+    fcuImageType: 0
+    buttonComponent: 0
+    hash: -216452107
+    hashDataTree: "\u2014\u2014\u2014\u2014Frame 59/\u043C\u043E\u043D\u0435\u0442\u044B
+      \u0433\u0440\u0443\u043F\u043F\u0430/100\n    isVisible | True\n    Type |
+      TEXT\n    GetFigmaRotationAngle | 0\n    StrokeWeight | 1\n    StrokeAlign
+      | OUTSIDE\n    BlendMode | PASS_THROUGH\n    isVisible | True\n    Type | TEXT\n   
+      GetFigmaRotationAngle | 0\n    StrokeWeight | 1\n    StrokeAlign | OUTSIDE\n   
+      BlendMode | PASS_THROUGH\n    \u2014\u2014\u2014\u2014TextStyle\n        FontFamily
+      | Jost\n        FontWeight | 500\n        FontSize | 24\n        TextAlignHorizontal
+      | LEFT\n        TextAlignVertical | CENTER\n    \u2014\u2014\u2014\u2014Fills\n       
+      IsVisible | True\n        Type | SOLID\n        Color | RGBA(0.000, 0.000,
+      0.000, 1.000)\n        BlendMode | NORMAL\n    \u2014\u2014\u2014\u2014ArcData\n       
+      StartingAngle | 0\n        EndingAngle | 0\n        InnerRadius | 0\n"
+    parentIndex: 6
+    hierarchy: "Frame 59/\u043C\u043E\u043D\u0435\u0442\u044B \u0433\u0440\u0443\u043F\u043F\u0430/100"
+    spritePath: 
+    link: 
+    humanizedTextPrefabName: UnityText Jost-Medium-24-LeftCenter-Black255
+    tagReason: 
+    downloadAttempsCount: 0
+    isDownloadable: 0
+    isDuplicate: 1
+    isMutual: 1
+    isEmptyMask: 0
+    isEmpty: 0
+    needDownload: 0
+    needGenerate: 0
+    forceImage: 0
+    forceContainer: 0
+    isInsideDownloadable: 0
+    insideForceImage: 0
+    hasFontAsset: 0
 --- !u!1 &85086369
 GameObject:
   m_ObjectHideFlags: 0
@@ -284,7 +443,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &105844140
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -700,6 +859,393 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &107380544
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 107380545}
+  - component: {fileID: 107380547}
+  - component: {fileID: 107380546}
+  m_Layer: 5
+  m_Name: Frame 59
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &107380545
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 107380544}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1419576567}
+  m_Father: {fileID: 1585133152}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.23836394, y: 0.88839585}
+  m_AnchorMax: {x: 0.3357794, y: 0.9086042}
+  m_AnchoredPosition: {x: 245.51776, y: -112.72168}
+  m_SizeDelta: {x: 496.4643, y: 222.4422}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &107380546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 107380544}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3312d7739989d2b4e91e6319e9a96d76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding: {x: 0, y: 0, z: 0, w: 0}
+  m_Softness: {x: 0, y: 0}
+--- !u!114 &107380547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 107380544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18b42570416bdca4697b2749e5bf8c5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data:
+    id: 397:1567
+    formattedName: Frame 59
+    spriteName: 
+    tags: 02000000f601000001000000
+    childIndexes: 06000000
+    fcuInstance: {fileID: 1585133153}
+    gameObject: {fileID: 107380544}
+    transformData:
+      anchorMin: {x: 0, y: 0}
+      anchorMax: {x: 0, y: 0}
+      anchoredPosition: {x: 0, y: 0}
+      sizeDelta: {x: 0, y: 0, z: 0}
+      localRotation: {x: 0, y: 0, z: 0, w: 0}
+      localScale: {x: 0, y: 0, z: 0}
+    singleColor: {r: 0, g: 0, b: 0, a: 0}
+    spriteSize: {x: 0, y: 0}
+    size: {x: 123.42859, y: 55}
+    position: {x: -3583, y: -2460}
+    fcuImageType: 0
+    buttonComponent: 0
+    hash: -1554682607
+    hashDataTree: "\u2014\u2014\u2014\u2014Frame 59\n    isVisible | True\n    Type
+      | FRAME\n    GetFigmaRotationAngle | 0\n    StrokeWeight | 1\n    StrokeAlign
+      | INSIDE\n    BlendMode | PASS_THROUGH\n    ClipsContent | False\n    Size
+      | (123.43, 55.00)\n    isVisible | True\n    Type | FRAME\n    GetFigmaRotationAngle
+      | 0\n    StrokeWeight | 1\n    StrokeAlign | INSIDE\n    BlendMode | PASS_THROUGH\n   
+      ClipsContent | False\n    Size | (123.43, 55.00)\n    \u2014\u2014\u2014\u2014ArcData\n       
+      StartingAngle | 0\n        EndingAngle | 0\n        InnerRadius | 0\n\u2014\u2014\u2014\u2014Frame
+      59/\u043C\u043E\u043D\u0435\u0442\u044B \u0433\u0440\u0443\u043F\u043F\u0430\n   
+      isVisible | True\n    Type | GROUP\n    GetFigmaRotationAngle | 0\n    StrokeWeight
+      | 1\n    StrokeAlign | INSIDE\n    CornerRadiuses | 0 0 0 0\n    BlendMode
+      | PASS_THROUGH\n    ClipsContent | False\n    Size | (123.43, 55.00)\n    isVisible
+      | True\n    Type | GROUP\n    GetFigmaRotationAngle | 0\n    StrokeWeight |
+      1\n    StrokeAlign | INSIDE\n    CornerRadiuses | 0 0 0 0\n    BlendMode |
+      PASS_THROUGH\n    ClipsContent | False\n    Size | (123.43, 55.00)\n    \u2014\u2014\u2014\u2014ArcData\n       
+      StartingAngle | 0\n        EndingAngle | 0\n        InnerRadius | 0\n\u2014\u2014\u2014\u2014Frame
+      59/\u043C\u043E\u043D\u0435\u0442\u044B \u0433\u0440\u0443\u043F\u043F\u0430/Rectangle
+      3\n    isVisible | True\n    Type | RECTANGLE\n    GetFigmaRotationAngle |
+      0\n    FillGeometry | -727756007\n    StrokeWeight | 1\n    StrokeAlign | INSIDE\n   
+      CornerRadius | 200\n    BlendMode | PASS_THROUGH\n    Size | (100.00, 55.00)\n   
+      isVisible | True\n    Type | RECTANGLE\n    GetFigmaRotationAngle | 0\n   
+      FillGeometry | -727756007\n    StrokeWeight | 1\n    StrokeAlign | INSIDE\n   
+      CornerRadius | 200\n    BlendMode | PASS_THROUGH\n    Size | (100.00, 55.00)\n   
+      \u2014\u2014\u2014\u2014Fills\n        IsVisible | True\n        Type | SOLID\n       
+      Opacity | 0.7\n        Color | RGBA(1.000, 1.000, 1.000, 1.000)\n        BlendMode
+      | NORMAL\n    \u2014\u2014\u2014\u2014ArcData\n        StartingAngle | 0\n       
+      EndingAngle | 0\n        InnerRadius | 0\n    \u2014\u2014\u2014\u2014Frame
+      59/\u043C\u043E\u043D\u0435\u0442\u044B \u0433\u0440\u0443\u043F\u043F\u0430/\u0438\u043A\u043E\u043D\u043A\u0430_\u043C\u043E\u043D\u0435\u0442\u043A\u0430\n       
+      isVisible | True\n        Type | GROUP\n        GetFigmaRotationAngle | 0\n       
+      StrokeWeight | 1\n        StrokeAlign | INSIDE\n        BlendMode | PASS_THROUGH\n       
+      ClipsContent | False\n        Size | (42.43, 42.43)\n        isVisible | True\n       
+      Type | GROUP\n        GetFigmaRotationAngle | 0\n        StrokeWeight | 1\n       
+      StrokeAlign | INSIDE\n        BlendMode | PASS_THROUGH\n        ClipsContent
+      | False\n        Size | (42.43, 42.43)\n        \u2014\u2014\u2014\u2014ArcData\n           
+      StartingAngle | 0\n            EndingAngle | 0\n            InnerRadius | 0\n   
+      \u2014\u2014\u2014\u2014Frame 59/\u043C\u043E\u043D\u0435\u0442\u044B \u0433\u0440\u0443\u043F\u043F\u0430/\u0438\u043A\u043E\u043D\u043A\u0430_\u043C\u043E\u043D\u0435\u0442\u043A\u0430/Ellipse
+      5\n        isVisible | True\n        Type | ELLIPSE\n        GetFigmaRotationAngle
+      | 0\n        FillGeometry | -2074104716\n        StrokeWeight | 1\n       
+      StrokeAlign | INSIDE\n        BlendMode | PASS_THROUGH\n        Size | (42.43,
+      42.43)\n        isVisible | True\n        Type | ELLIPSE\n        GetFigmaRotationAngle
+      | 0\n        FillGeometry | -2074104716\n        StrokeWeight | 1\n       
+      StrokeAlign | INSIDE\n        BlendMode | PASS_THROUGH\n        Size | (42.43,
+      42.43)\n        \u2014\u2014\u2014\u2014Fills\n            IsVisible | True\n           
+      Type | SOLID\n            Color | RGBA(0.885, 0.683, 0.000, 1.000)\n           
+      BlendMode | NORMAL\n        \u2014\u2014\u2014\u2014ArcData\n            StartingAngle
+      | 0\n            EndingAngle | 6.283185\n            InnerRadius | 0\n       
+      \u2014\u2014\u2014\u2014Frame 59/\u043C\u043E\u043D\u0435\u0442\u044B \u0433\u0440\u0443\u043F\u043F\u0430/\u0438\u043A\u043E\u043D\u043A\u0430_\u043C\u043E\u043D\u0435\u0442\u043A\u0430/Ellipse
+      6\n            isVisible | True\n            Type | ELLIPSE\n            GetFigmaRotationAngle
+      | 0\n            FillGeometry | -981034844\n            StrokeWeight | 1\n           
+      StrokeAlign | INSIDE\n            BlendMode | PASS_THROUGH\n            Size
+      | (40.91, 40.91)\n            isVisible | True\n            Type | ELLIPSE\n           
+      GetFigmaRotationAngle | 0\n            FillGeometry | -981034844\n           
+      StrokeWeight | 1\n            StrokeAlign | INSIDE\n            BlendMode |
+      PASS_THROUGH\n            Size | (40.91, 40.91)\n            \u2014\u2014\u2014\u2014Fills\n               
+      IsVisible | True\n                Type | SOLID\n                Color | RGBA(1.000,
+      0.809, 0.165, 1.000)\n                BlendMode | NORMAL\n            \u2014\u2014\u2014\u2014ArcData\n               
+      StartingAngle | 0\n                EndingAngle | 6.283185\n               
+      InnerRadius | 0\n        \u2014\u2014\u2014\u2014Frame 59/\u043C\u043E\u043D\u0435\u0442\u044B
+      \u0433\u0440\u0443\u043F\u043F\u0430/100\n            isVisible | True\n           
+      Type | TEXT\n            GetFigmaRotationAngle | 0\n            StrokeWeight
+      | 1\n            StrokeAlign | OUTSIDE\n            BlendMode | PASS_THROUGH\n           
+      isVisible | True\n            Type | TEXT\n            GetFigmaRotationAngle
+      | 0\n            StrokeWeight | 1\n            StrokeAlign | OUTSIDE\n           
+      BlendMode | PASS_THROUGH\n            \u2014\u2014\u2014\u2014TextStyle\n               
+      FontFamily | Jost\n                FontWeight | 500\n                FontSize
+      | 24\n                TextAlignHorizontal | LEFT\n                TextAlignVertical
+      | CENTER\n            \u2014\u2014\u2014\u2014Fills\n                IsVisible
+      | True\n                Type | SOLID\n                Color | RGBA(0.000, 0.000,
+      0.000, 1.000)\n                BlendMode | NORMAL\n            \u2014\u2014\u2014\u2014ArcData\n               
+      StartingAngle | 0\n                EndingAngle | 0\n                InnerRadius
+      | 0\n            \u2014\u2014\u2014\u2014Frame 59/\u043C\u043E\u043D\u0435\u0442\u044B
+      \u0433\u0440\u0443\u043F\u043F\u0430/\u0438\u043A\u043E\u043D\u043A\u0430_\u043C\u043E\u043D\u0435\u0442\u043A\u0430/Ellipse
+      7\n                isVisible | True\n                Type | ELLIPSE\n               
+      GetFigmaRotationAngle | 0\n                FillGeometry | 572430809\n               
+      StrokeWeight | 1\n                StrokeAlign | INSIDE\n                BlendMode
+      | PASS_THROUGH\n                Size | (31.82, 31.82)\n                isVisible
+      | True\n                Type | ELLIPSE\n                GetFigmaRotationAngle
+      | 0\n                FillGeometry | 572430809\n                StrokeWeight
+      | 1\n                StrokeAlign | INSIDE\n                BlendMode | PASS_THROUGH\n               
+      Size | (31.82, 31.82)\n                \u2014\u2014\u2014\u2014Fills\n                   
+      IsVisible | True\n                    Type | SOLID\n                    Color
+      | RGBA(1.000, 0.952, 0.532, 1.000)\n                    BlendMode | NORMAL\n               
+      \u2014\u2014\u2014\u2014ArcData\n                    StartingAngle | 0\n                   
+      EndingAngle | 6.283185\n                    InnerRadius | 0\n               
+      \u2014\u2014\u2014\u2014Frame 59/\u043C\u043E\u043D\u0435\u0442\u044B \u0433\u0440\u0443\u043F\u043F\u0430/\u0438\u043A\u043E\u043D\u043A\u0430_\u043C\u043E\u043D\u0435\u0442\u043A\u0430/Star
+      1\n                    isVisible | True\n                    Type | STAR\n                   
+      GetFigmaRotationAngle | 0\n                    FillGeometry | 586247835\n                   
+      StrokeWeight | 1\n                    StrokeAlign | INSIDE\n                   
+      BlendMode | PASS_THROUGH\n                    Size | (22.73, 22.73)\n                   
+      isVisible | True\n                    Type | STAR\n                    GetFigmaRotationAngle
+      | 0\n                    FillGeometry | 586247835\n                    StrokeWeight
+      | 1\n                    StrokeAlign | INSIDE\n                    BlendMode
+      | PASS_THROUGH\n                    Size | (22.73, 22.73)\n                   
+      \u2014\u2014\u2014\u2014Fills\n                        IsVisible | True\n                       
+      Type | SOLID\n                        Color | RGBA(1.000, 0.809, 0.165, 1.000)\n                       
+      BlendMode | NORMAL\n                    \u2014\u2014\u2014\u2014ArcData\n                       
+      StartingAngle | 0\n                        EndingAngle | 0\n                       
+      InnerRadius | 0\n"
+    parentIndex: -1
+    hierarchy: Frame 59
+    spritePath: 
+    link: 
+    humanizedTextPrefabName: 
+    tagReason: children not empty
+    downloadAttempsCount: 0
+    isDownloadable: 0
+    isDuplicate: 0
+    isMutual: 0
+    isEmptyMask: 0
+    isEmpty: 0
+    needDownload: 0
+    needGenerate: 0
+    forceImage: 0
+    forceContainer: 0
+    isInsideDownloadable: 0
+    insideForceImage: 0
+    hasFontAsset: 0
+--- !u!1 &108063828
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 108063829}
+  - component: {fileID: 108063832}
+  - component: {fileID: 108063831}
+  - component: {fileID: 108063830}
+  m_Layer: 5
+  m_Name: "\u0438\u043A\u043E\u043D\u043A\u0430_\u043C\u043E\u043D\u0435\u0442\u043A\u0430"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &108063829
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 108063828}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 417671911}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 99.25, y: -27.535645}
+  m_SizeDelta: {x: 42.5, y: 42.5}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &108063830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 108063828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: cdd48c217a74d458cb132083b7dffc5f, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &108063831
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 108063828}
+  m_CullTransparentMesh: 1
+--- !u!114 &108063832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 108063828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18b42570416bdca4697b2749e5bf8c5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data:
+    id: 397:1546
+    formattedName: "\u0438\u043A\u043E\u043D\u043A\u0430_\u043C\u043E\u043D\u0435\u0442\u043A\u0430"
+    spriteName: "\u0438\u043A\u043E\u043D\u043A\u0430_\u043C\u043E\u043D\u0435\u0442\u043A\u0430
+      4x -760620871.png"
+    tags: c9000000
+    childIndexes: 
+    fcuInstance: {fileID: 1585133153}
+    gameObject: {fileID: 108063828}
+    transformData:
+      anchorMin: {x: 0, y: 0}
+      anchorMax: {x: 0, y: 0}
+      anchoredPosition: {x: 0, y: 0}
+      sizeDelta: {x: 0, y: 0, z: 0}
+      localRotation: {x: 0, y: 0, z: 0, w: 0}
+      localScale: {x: 0, y: 0, z: 0}
+    singleColor: {r: 0, g: 0, b: 0, a: 0}
+    spriteSize: {x: 170, y: 170}
+    size: {x: 42.5, y: 42.5}
+    position: {x: -3501, y: -2396.2856}
+    fcuImageType: 1
+    buttonComponent: 0
+    hash: -760620871
+    hashDataTree: "\u2014\u2014\u2014\u2014Frame 58/\u043C\u043E\u043D\u0435\u0442\u044B
+      \u0430\u0432\u0442\u043E/\u0438\u043A\u043E\u043D\u043A\u0430_\u043C\u043E\u043D\u0435\u0442\u043A\u0430\n   
+      isVisible | True\n    Type | GROUP\n    GetFigmaRotationAngle | 0\n    StrokeWeight
+      | 1\n    StrokeAlign | INSIDE\n    BlendMode | PASS_THROUGH\n    ClipsContent
+      | False\n    Size | (42.43, 42.43)\n    isVisible | True\n    Type | GROUP\n   
+      GetFigmaRotationAngle | 0\n    StrokeWeight | 1\n    StrokeAlign | INSIDE\n   
+      BlendMode | PASS_THROUGH\n    ClipsContent | False\n    Size | (42.43, 42.43)\n   
+      \u2014\u2014\u2014\u2014ArcData\n        StartingAngle | 0\n        EndingAngle
+      | 0\n        InnerRadius | 0\n\u2014\u2014\u2014\u2014Frame 58/\u043C\u043E\u043D\u0435\u0442\u044B
+      \u0430\u0432\u0442\u043E/\u0438\u043A\u043E\u043D\u043A\u0430_\u043C\u043E\u043D\u0435\u0442\u043A\u0430/Ellipse
+      5\n    isVisible | True\n    Type | ELLIPSE\n    GetFigmaRotationAngle | 0\n   
+      FillGeometry | -2074104716\n    StrokeWeight | 1\n    StrokeAlign | INSIDE\n   
+      BlendMode | PASS_THROUGH\n    Size | (42.43, 42.43)\n    isVisible | True\n   
+      Type | ELLIPSE\n    GetFigmaRotationAngle | 0\n    FillGeometry | -2074104716\n   
+      StrokeWeight | 1\n    StrokeAlign | INSIDE\n    BlendMode | PASS_THROUGH\n   
+      Size | (42.43, 42.43)\n    \u2014\u2014\u2014\u2014Fills\n        IsVisible
+      | True\n        Type | SOLID\n        Color | RGBA(0.885, 0.683, 0.000, 1.000)\n       
+      BlendMode | NORMAL\n    \u2014\u2014\u2014\u2014ArcData\n        StartingAngle
+      | 0\n        EndingAngle | 6.283185\n        InnerRadius | 0\n    \u2014\u2014\u2014\u2014Frame
+      58/\u043C\u043E\u043D\u0435\u0442\u044B \u0430\u0432\u0442\u043E/\u0438\u043A\u043E\u043D\u043A\u0430_\u043C\u043E\u043D\u0435\u0442\u043A\u0430/Ellipse
+      6\n        isVisible | True\n        Type | ELLIPSE\n        GetFigmaRotationAngle
+      | 0\n        FillGeometry | -981034844\n        StrokeWeight | 1\n        StrokeAlign
+      | INSIDE\n        BlendMode | PASS_THROUGH\n        Size | (40.91, 40.91)\n       
+      isVisible | True\n        Type | ELLIPSE\n        GetFigmaRotationAngle | 0\n       
+      FillGeometry | -981034844\n        StrokeWeight | 1\n        StrokeAlign |
+      INSIDE\n        BlendMode | PASS_THROUGH\n        Size | (40.91, 40.91)\n       
+      \u2014\u2014\u2014\u2014Fills\n            IsVisible | True\n            Type
+      | SOLID\n            Color | RGBA(1.000, 0.809, 0.165, 1.000)\n           
+      BlendMode | NORMAL\n        \u2014\u2014\u2014\u2014ArcData\n            StartingAngle
+      | 0\n            EndingAngle | 6.283185\n            InnerRadius | 0\n       
+      \u2014\u2014\u2014\u2014Frame 58/\u043C\u043E\u043D\u0435\u0442\u044B \u0430\u0432\u0442\u043E/\u0438\u043A\u043E\u043D\u043A\u0430_\u043C\u043E\u043D\u0435\u0442\u043A\u0430/Ellipse
+      7\n            isVisible | True\n            Type | ELLIPSE\n            GetFigmaRotationAngle
+      | 0\n            FillGeometry | 572430809\n            StrokeWeight | 1\n           
+      StrokeAlign | INSIDE\n            BlendMode | PASS_THROUGH\n            Size
+      | (31.82, 31.82)\n            isVisible | True\n            Type | ELLIPSE\n           
+      GetFigmaRotationAngle | 0\n            FillGeometry | 572430809\n           
+      StrokeWeight | 1\n            StrokeAlign | INSIDE\n            BlendMode |
+      PASS_THROUGH\n            Size | (31.82, 31.82)\n            \u2014\u2014\u2014\u2014Fills\n               
+      IsVisible | True\n                Type | SOLID\n                Color | RGBA(1.000,
+      0.952, 0.532, 1.000)\n                BlendMode | NORMAL\n            \u2014\u2014\u2014\u2014ArcData\n               
+      StartingAngle | 0\n                EndingAngle | 6.283185\n               
+      InnerRadius | 0\n            \u2014\u2014\u2014\u2014Frame 58/\u043C\u043E\u043D\u0435\u0442\u044B
+      \u0430\u0432\u0442\u043E/\u0438\u043A\u043E\u043D\u043A\u0430_\u043C\u043E\u043D\u0435\u0442\u043A\u0430/Star
+      1\n                isVisible | True\n                Type | STAR\n               
+      GetFigmaRotationAngle | 0\n                FillGeometry | 586247835\n               
+      StrokeWeight | 1\n                StrokeAlign | INSIDE\n                BlendMode
+      | PASS_THROUGH\n                Size | (22.73, 22.73)\n                isVisible
+      | True\n                Type | STAR\n                GetFigmaRotationAngle
+      | 0\n                FillGeometry | 586247835\n                StrokeWeight
+      | 1\n                StrokeAlign | INSIDE\n                BlendMode | PASS_THROUGH\n               
+      Size | (22.73, 22.73)\n                \u2014\u2014\u2014\u2014Fills\n                   
+      IsVisible | True\n                    Type | SOLID\n                    Color
+      | RGBA(1.000, 0.809, 0.165, 1.000)\n                    BlendMode | NORMAL\n               
+      \u2014\u2014\u2014\u2014ArcData\n                    StartingAngle | 0\n                   
+      EndingAngle | 0\n                    InnerRadius | 0\n"
+    parentIndex: 1
+    hierarchy: "Frame 58/\u043C\u043E\u043D\u0435\u0442\u044B \u0430\u0432\u0442\u043E/\u0438\u043A\u043E\u043D\u043A\u0430_\u043C\u043E\u043D\u0435\u0442\u043A\u0430"
+    spritePath: 
+    link: 
+    humanizedTextPrefabName: 
+    tagReason: SingleImage
+    downloadAttempsCount: 0
+    isDownloadable: 0
+    isDuplicate: 1
+    isMutual: 1
+    isEmptyMask: 0
+    isEmpty: 0
+    needDownload: 0
+    needGenerate: 0
+    forceImage: 1
+    forceContainer: 0
+    isInsideDownloadable: 0
+    insideForceImage: 0
+    hasFontAsset: 0
 --- !u!1 &131926217
 GameObject:
   m_ObjectHideFlags: 0
@@ -977,6 +1523,108 @@ MonoBehaviour:
     isInsideDownloadable: 0
     insideForceImage: 0
     hasFontAsset: 0
+--- !u!1 &219700583
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 219700587}
+  - component: {fileID: 219700586}
+  - component: {fileID: 219700585}
+  - component: {fileID: 219700584}
+  m_Layer: 5
+  m_Name: Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &219700584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 219700583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &219700585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 219700583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
+--- !u!223 &219700586
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 219700583}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_UpdateRectTransformForStandalone: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!224 &219700587
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 219700583}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1585133152}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
 --- !u!1 &249742792
 GameObject:
   m_ObjectHideFlags: 0
@@ -1421,6 +2069,187 @@ MonoBehaviour:
     isInsideDownloadable: 0
     insideForceImage: 0
     hasFontAsset: 1
+--- !u!1 &298500107
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 298500108}
+  - component: {fileID: 298500113}
+  - component: {fileID: 298500112}
+  - component: {fileID: 298500111}
+  - component: {fileID: 298500110}
+  - component: {fileID: 298500109}
+  m_Layer: 5
+  m_Name: 100
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &298500108
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 298500107}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 760011889}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 49, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &298500109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 298500107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 24
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 1
+    m_MaxSize: 24
+    m_Alignment: 3
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 100
+--- !u!222 &298500110
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 298500107}
+  m_CullTransparentMesh: 1
+--- !u!114 &298500111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 298500107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalFit: 2
+  m_VerticalFit: 2
+--- !u!114 &298500112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 298500107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 306cc8c2b49d7114eaa3623786fc2126, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreLayout: 0
+  m_MinWidth: 42
+  m_MinHeight: 35
+  m_PreferredWidth: -1
+  m_PreferredHeight: -1
+  m_FlexibleWidth: -1
+  m_FlexibleHeight: -1
+  m_LayoutPriority: 1
+--- !u!114 &298500113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 298500107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18b42570416bdca4697b2749e5bf8c5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data:
+    id: 397:1545
+    formattedName: 100
+    spriteName: 
+    tags: c800000065000000
+    childIndexes: 
+    fcuInstance: {fileID: 1585133153}
+    gameObject: {fileID: 298500107}
+    transformData:
+      anchorMin: {x: 0, y: 0}
+      anchorMax: {x: 0, y: 0}
+      anchoredPosition: {x: 0, y: 0}
+      sizeDelta: {x: 0, y: 0, z: 0}
+      localRotation: {x: 0, y: 0, z: 0, w: 0}
+      localScale: {x: 0, y: 0, z: 0}
+    singleColor: {r: 0, g: 0, b: 0, a: 1}
+    spriteSize: {x: 0, y: 0}
+    size: {x: 42, y: 35}
+    position: {x: -3551, y: -2400}
+    fcuImageType: 0
+    buttonComponent: 0
+    hash: -216452107
+    hashDataTree: "\u2014\u2014\u2014\u2014Frame 58/\u043C\u043E\u043D\u0435\u0442\u044B
+      \u0430\u0432\u0442\u043E/Frame 10/100\n    isVisible | True\n    Type | TEXT\n   
+      GetFigmaRotationAngle | 0\n    StrokeWeight | 1\n    StrokeAlign | OUTSIDE\n   
+      BlendMode | PASS_THROUGH\n    isVisible | True\n    Type | TEXT\n    GetFigmaRotationAngle
+      | 0\n    StrokeWeight | 1\n    StrokeAlign | OUTSIDE\n    BlendMode | PASS_THROUGH\n   
+      \u2014\u2014\u2014\u2014TextStyle\n        FontFamily | Jost\n        FontWeight
+      | 500\n        FontSize | 24\n        TextAlignHorizontal | LEFT\n        TextAlignVertical
+      | CENTER\n    \u2014\u2014\u2014\u2014Fills\n        IsVisible | True\n       
+      Type | SOLID\n        Color | RGBA(0.000, 0.000, 0.000, 1.000)\n        BlendMode
+      | NORMAL\n    \u2014\u2014\u2014\u2014ArcData\n        StartingAngle | 0\n       
+      EndingAngle | 0\n        InnerRadius | 0\n"
+    parentIndex: 2
+    hierarchy: "Frame 58/\u043C\u043E\u043D\u0435\u0442\u044B \u0430\u0432\u0442\u043E/Frame
+      10/100"
+    spritePath: 
+    link: 
+    humanizedTextPrefabName: UnityText Jost-Medium-24-LeftCenter-Black255
+    tagReason: 
+    downloadAttempsCount: 0
+    isDownloadable: 0
+    isDuplicate: 1
+    isMutual: 1
+    isEmptyMask: 0
+    isEmpty: 0
+    needDownload: 0
+    needGenerate: 0
+    forceImage: 0
+    forceContainer: 0
+    isInsideDownloadable: 0
+    insideForceImage: 0
+    hasFontAsset: 0
 --- !u!1 &336609741
 GameObject:
   m_ObjectHideFlags: 0
@@ -1613,6 +2442,535 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speedAnimation: 7
+--- !u!1 &417671910
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 417671911}
+  - component: {fileID: 417671912}
+  m_Layer: 5
+  m_Name: "\u043C\u043E\u043D\u0435\u0442\u044B \u0430\u0432\u0442\u043E"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &417671911
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 417671910}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 760011889}
+  - {fileID: 108063829}
+  m_Father: {fileID: 427190243}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 60.214294, y: -27.5}
+  m_SizeDelta: {x: 120.42859, y: 55}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &417671912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 417671910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18b42570416bdca4697b2749e5bf8c5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data:
+    id: 397:1543
+    formattedName: "\u043C\u043E\u043D\u0435\u0442\u044B \u0430\u0432\u0442\u043E"
+    spriteName: 
+    tags: 01000000
+    childIndexes: 0200000004000000
+    fcuInstance: {fileID: 1585133153}
+    gameObject: {fileID: 417671910}
+    transformData:
+      anchorMin: {x: 0, y: 0}
+      anchorMax: {x: 0, y: 0}
+      anchoredPosition: {x: 0, y: 0}
+      sizeDelta: {x: 0, y: 0, z: 0}
+      localRotation: {x: 0, y: 0, z: 0, w: 0}
+      localScale: {x: 0, y: 0, z: 0}
+    singleColor: {r: 0, g: 0, b: 0, a: 0}
+    spriteSize: {x: 0, y: 0}
+    size: {x: 120.42859, y: 55}
+    position: {x: -3579, y: -2390}
+    fcuImageType: 0
+    buttonComponent: 0
+    hash: -1747210006
+    hashDataTree: "\u2014\u2014\u2014\u2014Frame 58/\u043C\u043E\u043D\u0435\u0442\u044B
+      \u0430\u0432\u0442\u043E\n    isVisible | True\n    Type | GROUP\n    GetFigmaRotationAngle
+      | 0\n    StrokeWeight | 1\n    StrokeAlign | INSIDE\n    CornerRadiuses | 0
+      0 0 0\n    BlendMode | PASS_THROUGH\n    ClipsContent | False\n    Size | (120.43,
+      55.00)\n    isVisible | True\n    Type | GROUP\n    GetFigmaRotationAngle |
+      0\n    StrokeWeight | 1\n    StrokeAlign | INSIDE\n    CornerRadiuses | 0 0
+      0 0\n    BlendMode | PASS_THROUGH\n    ClipsContent | False\n    Size | (120.43,
+      55.00)\n    \u2014\u2014\u2014\u2014ArcData\n        StartingAngle | 0\n       
+      EndingAngle | 0\n        InnerRadius | 0\n\u2014\u2014\u2014\u2014Frame 58/\u043C\u043E\u043D\u0435\u0442\u044B
+      \u0430\u0432\u0442\u043E/Frame 10\n    isVisible | True\n    Type | FRAME\n   
+      GetFigmaRotationAngle | 0\n    FillGeometry | 1592947973\n    StrokeWeight
+      | 1\n    StrokeAlign | INSIDE\n    CornerRadius | 100\n    BlendMode | PASS_THROUGH\n   
+      ClipsContent | False\n    LayoutMode | HORIZONTAL\n    ItemSpacing | 10\n   
+      PrimaryAxisAlignItems | CENTER\n    CounterAxisAlignItems | CENTER\n    PaddingLeft
+      | 28\n    PaddingRight | 28\n    PaddingTop | 10\n    PaddingBottom | 10\n   
+      Size | (98.00, 55.00)\n    isVisible | True\n    Type | FRAME\n    GetFigmaRotationAngle
+      | 0\n    FillGeometry | 1592947973\n    StrokeWeight | 1\n    StrokeAlign |
+      INSIDE\n    CornerRadius | 100\n    BlendMode | PASS_THROUGH\n    ClipsContent
+      | False\n    LayoutMode | HORIZONTAL\n    ItemSpacing | 10\n    PrimaryAxisAlignItems
+      | CENTER\n    CounterAxisAlignItems | CENTER\n    PaddingLeft | 28\n    PaddingRight
+      | 28\n    PaddingTop | 10\n    PaddingBottom | 10\n    Size | (98.00, 55.00)\n   
+      \u2014\u2014\u2014\u2014Fills\n        IsVisible | True\n        Type | SOLID\n       
+      Opacity | 0.7\n        Color | RGBA(1.000, 1.000, 1.000, 1.000)\n        BlendMode
+      | NORMAL\n    \u2014\u2014\u2014\u2014ArcData\n        StartingAngle | 0\n       
+      EndingAngle | 0\n        InnerRadius | 0\n\u2014\u2014\u2014\u2014Frame 58/\u043C\u043E\u043D\u0435\u0442\u044B
+      \u0430\u0432\u0442\u043E/Frame 10/100\n    isVisible | True\n    Type | TEXT\n   
+      GetFigmaRotationAngle | 0\n    StrokeWeight | 1\n    StrokeAlign | OUTSIDE\n   
+      BlendMode | PASS_THROUGH\n    isVisible | True\n    Type | TEXT\n    GetFigmaRotationAngle
+      | 0\n    StrokeWeight | 1\n    StrokeAlign | OUTSIDE\n    BlendMode | PASS_THROUGH\n   
+      \u2014\u2014\u2014\u2014TextStyle\n        FontFamily | Jost\n        FontWeight
+      | 500\n        FontSize | 24\n        TextAlignHorizontal | LEFT\n        TextAlignVertical
+      | CENTER\n    \u2014\u2014\u2014\u2014Fills\n        IsVisible | True\n       
+      Type | SOLID\n        Color | RGBA(0.000, 0.000, 0.000, 1.000)\n        BlendMode
+      | NORMAL\n    \u2014\u2014\u2014\u2014ArcData\n        StartingAngle | 0\n       
+      EndingAngle | 0\n        InnerRadius | 0\n    \u2014\u2014\u2014\u2014Frame
+      58/\u043C\u043E\u043D\u0435\u0442\u044B \u0430\u0432\u0442\u043E/\u0438\u043A\u043E\u043D\u043A\u0430_\u043C\u043E\u043D\u0435\u0442\u043A\u0430\n       
+      isVisible | True\n        Type | GROUP\n        GetFigmaRotationAngle | 0\n       
+      StrokeWeight | 1\n        StrokeAlign | INSIDE\n        BlendMode | PASS_THROUGH\n       
+      ClipsContent | False\n        Size | (42.43, 42.43)\n        isVisible | True\n       
+      Type | GROUP\n        GetFigmaRotationAngle | 0\n        StrokeWeight | 1\n       
+      StrokeAlign | INSIDE\n        BlendMode | PASS_THROUGH\n        ClipsContent
+      | False\n        Size | (42.43, 42.43)\n        \u2014\u2014\u2014\u2014ArcData\n           
+      StartingAngle | 0\n            EndingAngle | 0\n            InnerRadius | 0\n   
+      \u2014\u2014\u2014\u2014Frame 58/\u043C\u043E\u043D\u0435\u0442\u044B \u0430\u0432\u0442\u043E/\u0438\u043A\u043E\u043D\u043A\u0430_\u043C\u043E\u043D\u0435\u0442\u043A\u0430/Ellipse
+      5\n        isVisible | True\n        Type | ELLIPSE\n        GetFigmaRotationAngle
+      | 0\n        FillGeometry | -2074104716\n        StrokeWeight | 1\n       
+      StrokeAlign | INSIDE\n        BlendMode | PASS_THROUGH\n        Size | (42.43,
+      42.43)\n        isVisible | True\n        Type | ELLIPSE\n        GetFigmaRotationAngle
+      | 0\n        FillGeometry | -2074104716\n        StrokeWeight | 1\n       
+      StrokeAlign | INSIDE\n        BlendMode | PASS_THROUGH\n        Size | (42.43,
+      42.43)\n        \u2014\u2014\u2014\u2014Fills\n            IsVisible | True\n           
+      Type | SOLID\n            Color | RGBA(0.885, 0.683, 0.000, 1.000)\n           
+      BlendMode | NORMAL\n        \u2014\u2014\u2014\u2014ArcData\n            StartingAngle
+      | 0\n            EndingAngle | 6.283185\n            InnerRadius | 0\n       
+      \u2014\u2014\u2014\u2014Frame 58/\u043C\u043E\u043D\u0435\u0442\u044B \u0430\u0432\u0442\u043E/\u0438\u043A\u043E\u043D\u043A\u0430_\u043C\u043E\u043D\u0435\u0442\u043A\u0430/Ellipse
+      6\n            isVisible | True\n            Type | ELLIPSE\n            GetFigmaRotationAngle
+      | 0\n            FillGeometry | -981034844\n            StrokeWeight | 1\n           
+      StrokeAlign | INSIDE\n            BlendMode | PASS_THROUGH\n            Size
+      | (40.91, 40.91)\n            isVisible | True\n            Type | ELLIPSE\n           
+      GetFigmaRotationAngle | 0\n            FillGeometry | -981034844\n           
+      StrokeWeight | 1\n            StrokeAlign | INSIDE\n            BlendMode |
+      PASS_THROUGH\n            Size | (40.91, 40.91)\n            \u2014\u2014\u2014\u2014Fills\n               
+      IsVisible | True\n                Type | SOLID\n                Color | RGBA(1.000,
+      0.809, 0.165, 1.000)\n                BlendMode | NORMAL\n            \u2014\u2014\u2014\u2014ArcData\n               
+      StartingAngle | 0\n                EndingAngle | 6.283185\n               
+      InnerRadius | 0\n            \u2014\u2014\u2014\u2014Frame 58/\u043C\u043E\u043D\u0435\u0442\u044B
+      \u0430\u0432\u0442\u043E/\u0438\u043A\u043E\u043D\u043A\u0430_\u043C\u043E\u043D\u0435\u0442\u043A\u0430/Ellipse
+      7\n                isVisible | True\n                Type | ELLIPSE\n               
+      GetFigmaRotationAngle | 0\n                FillGeometry | 572430809\n               
+      StrokeWeight | 1\n                StrokeAlign | INSIDE\n                BlendMode
+      | PASS_THROUGH\n                Size | (31.82, 31.82)\n                isVisible
+      | True\n                Type | ELLIPSE\n                GetFigmaRotationAngle
+      | 0\n                FillGeometry | 572430809\n                StrokeWeight
+      | 1\n                StrokeAlign | INSIDE\n                BlendMode | PASS_THROUGH\n               
+      Size | (31.82, 31.82)\n                \u2014\u2014\u2014\u2014Fills\n                   
+      IsVisible | True\n                    Type | SOLID\n                    Color
+      | RGBA(1.000, 0.952, 0.532, 1.000)\n                    BlendMode | NORMAL\n               
+      \u2014\u2014\u2014\u2014ArcData\n                    StartingAngle | 0\n                   
+      EndingAngle | 6.283185\n                    InnerRadius | 0\n               
+      \u2014\u2014\u2014\u2014Frame 58/\u043C\u043E\u043D\u0435\u0442\u044B \u0430\u0432\u0442\u043E/\u0438\u043A\u043E\u043D\u043A\u0430_\u043C\u043E\u043D\u0435\u0442\u043A\u0430/Star
+      1\n                    isVisible | True\n                    Type | STAR\n                   
+      GetFigmaRotationAngle | 0\n                    FillGeometry | 586247835\n                   
+      StrokeWeight | 1\n                    StrokeAlign | INSIDE\n                   
+      BlendMode | PASS_THROUGH\n                    Size | (22.73, 22.73)\n                   
+      isVisible | True\n                    Type | STAR\n                    GetFigmaRotationAngle
+      | 0\n                    FillGeometry | 586247835\n                    StrokeWeight
+      | 1\n                    StrokeAlign | INSIDE\n                    BlendMode
+      | PASS_THROUGH\n                    Size | (22.73, 22.73)\n                   
+      \u2014\u2014\u2014\u2014Fills\n                        IsVisible | True\n                       
+      Type | SOLID\n                        Color | RGBA(1.000, 0.809, 0.165, 1.000)\n                       
+      BlendMode | NORMAL\n                    \u2014\u2014\u2014\u2014ArcData\n                       
+      StartingAngle | 0\n                        EndingAngle | 0\n                       
+      InnerRadius | 0\n"
+    parentIndex: 0
+    hierarchy: "Frame 58/\u043C\u043E\u043D\u0435\u0442\u044B \u0430\u0432\u0442\u043E"
+    spritePath: 
+    link: 
+    humanizedTextPrefabName: 
+    tagReason: children not empty
+    downloadAttempsCount: 0
+    isDownloadable: 0
+    isDuplicate: 0
+    isMutual: 0
+    isEmptyMask: 0
+    isEmpty: 0
+    needDownload: 0
+    needGenerate: 0
+    forceImage: 0
+    forceContainer: 0
+    isInsideDownloadable: 0
+    insideForceImage: 0
+    hasFontAsset: 0
+--- !u!1 &427190242
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 427190243}
+  - component: {fileID: 427190245}
+  - component: {fileID: 427190244}
+  m_Layer: 5
+  m_Name: Frame 58
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &427190243
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 427190242}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 417671911}
+  m_Father: {fileID: 1585133152}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.9798839}
+  m_AnchorMax: {x: 0.09741547, y: 1}
+  m_AnchoredPosition: {x: -0.25915527, y: 0.1697998}
+  m_SizeDelta: {x: -0.51831055, y: -0.33935547}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &427190244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 427190242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3312d7739989d2b4e91e6319e9a96d76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding: {x: 0, y: 0, z: 0, w: 0}
+  m_Softness: {x: 0, y: 0}
+--- !u!114 &427190245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 427190242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18b42570416bdca4697b2749e5bf8c5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data:
+    id: 397:1566
+    formattedName: Frame 58
+    spriteName: 
+    tags: 02000000f601000001000000
+    childIndexes: 01000000
+    fcuInstance: {fileID: 1585133153}
+    gameObject: {fileID: 427190242}
+    transformData:
+      anchorMin: {x: 0, y: 0}
+      anchorMax: {x: 0, y: 0}
+      anchoredPosition: {x: 0, y: 0}
+      sizeDelta: {x: 0, y: 0, z: 0}
+      localRotation: {x: 0, y: 0, z: 0, w: 0}
+      localScale: {x: 0, y: 0, z: 0}
+    singleColor: {r: 0, g: 0, b: 0, a: 0}
+    spriteSize: {x: 0, y: 0}
+    size: {x: 120.42859, y: 55}
+    position: {x: -3579, y: -2390}
+    fcuImageType: 0
+    buttonComponent: 0
+    hash: -780035831
+    hashDataTree: "\u2014\u2014\u2014\u2014Frame 58\n    isVisible | True\n    Type
+      | FRAME\n    GetFigmaRotationAngle | 0\n    StrokeWeight | 1\n    StrokeAlign
+      | INSIDE\n    BlendMode | PASS_THROUGH\n    ClipsContent | False\n    Size
+      | (120.43, 55.00)\n    isVisible | True\n    Type | FRAME\n    GetFigmaRotationAngle
+      | 0\n    StrokeWeight | 1\n    StrokeAlign | INSIDE\n    BlendMode | PASS_THROUGH\n   
+      ClipsContent | False\n    Size | (120.43, 55.00)\n    \u2014\u2014\u2014\u2014ArcData\n       
+      StartingAngle | 0\n        EndingAngle | 0\n        InnerRadius | 0\n\u2014\u2014\u2014\u2014Frame
+      58/\u043C\u043E\u043D\u0435\u0442\u044B \u0430\u0432\u0442\u043E\n    isVisible
+      | True\n    Type | GROUP\n    GetFigmaRotationAngle | 0\n    StrokeWeight |
+      1\n    StrokeAlign | INSIDE\n    CornerRadiuses | 0 0 0 0\n    BlendMode |
+      PASS_THROUGH\n    ClipsContent | False\n    Size | (120.43, 55.00)\n    isVisible
+      | True\n    Type | GROUP\n    GetFigmaRotationAngle | 0\n    StrokeWeight |
+      1\n    StrokeAlign | INSIDE\n    CornerRadiuses | 0 0 0 0\n    BlendMode |
+      PASS_THROUGH\n    ClipsContent | False\n    Size | (120.43, 55.00)\n    \u2014\u2014\u2014\u2014ArcData\n       
+      StartingAngle | 0\n        EndingAngle | 0\n        InnerRadius | 0\n\u2014\u2014\u2014\u2014Frame
+      58/\u043C\u043E\u043D\u0435\u0442\u044B \u0430\u0432\u0442\u043E/Frame 10\n   
+      isVisible | True\n    Type | FRAME\n    GetFigmaRotationAngle | 0\n    FillGeometry
+      | 1592947973\n    StrokeWeight | 1\n    StrokeAlign | INSIDE\n    CornerRadius
+      | 100\n    BlendMode | PASS_THROUGH\n    ClipsContent | False\n    LayoutMode
+      | HORIZONTAL\n    ItemSpacing | 10\n    PrimaryAxisAlignItems | CENTER\n   
+      CounterAxisAlignItems | CENTER\n    PaddingLeft | 28\n    PaddingRight | 28\n   
+      PaddingTop | 10\n    PaddingBottom | 10\n    Size | (98.00, 55.00)\n    isVisible
+      | True\n    Type | FRAME\n    GetFigmaRotationAngle | 0\n    FillGeometry |
+      1592947973\n    StrokeWeight | 1\n    StrokeAlign | INSIDE\n    CornerRadius
+      | 100\n    BlendMode | PASS_THROUGH\n    ClipsContent | False\n    LayoutMode
+      | HORIZONTAL\n    ItemSpacing | 10\n    PrimaryAxisAlignItems | CENTER\n   
+      CounterAxisAlignItems | CENTER\n    PaddingLeft | 28\n    PaddingRight | 28\n   
+      PaddingTop | 10\n    PaddingBottom | 10\n    Size | (98.00, 55.00)\n    \u2014\u2014\u2014\u2014Fills\n       
+      IsVisible | True\n        Type | SOLID\n        Opacity | 0.7\n        Color
+      | RGBA(1.000, 1.000, 1.000, 1.000)\n        BlendMode | NORMAL\n    \u2014\u2014\u2014\u2014ArcData\n       
+      StartingAngle | 0\n        EndingAngle | 0\n        InnerRadius | 0\n\u2014\u2014\u2014\u2014Frame
+      58/\u043C\u043E\u043D\u0435\u0442\u044B \u0430\u0432\u0442\u043E/Frame 10/100\n   
+      isVisible | True\n    Type | TEXT\n    GetFigmaRotationAngle | 0\n    StrokeWeight
+      | 1\n    StrokeAlign | OUTSIDE\n    BlendMode | PASS_THROUGH\n    isVisible
+      | True\n    Type | TEXT\n    GetFigmaRotationAngle | 0\n    StrokeWeight |
+      1\n    StrokeAlign | OUTSIDE\n    BlendMode | PASS_THROUGH\n    \u2014\u2014\u2014\u2014TextStyle\n       
+      FontFamily | Jost\n        FontWeight | 500\n        FontSize | 24\n       
+      TextAlignHorizontal | LEFT\n        TextAlignVertical | CENTER\n    \u2014\u2014\u2014\u2014Fills\n       
+      IsVisible | True\n        Type | SOLID\n        Color | RGBA(0.000, 0.000,
+      0.000, 1.000)\n        BlendMode | NORMAL\n    \u2014\u2014\u2014\u2014ArcData\n       
+      StartingAngle | 0\n        EndingAngle | 0\n        InnerRadius | 0\n    \u2014\u2014\u2014\u2014Frame
+      58/\u043C\u043E\u043D\u0435\u0442\u044B \u0430\u0432\u0442\u043E/\u0438\u043A\u043E\u043D\u043A\u0430_\u043C\u043E\u043D\u0435\u0442\u043A\u0430\n       
+      isVisible | True\n        Type | GROUP\n        GetFigmaRotationAngle | 0\n       
+      StrokeWeight | 1\n        StrokeAlign | INSIDE\n        BlendMode | PASS_THROUGH\n       
+      ClipsContent | False\n        Size | (42.43, 42.43)\n        isVisible | True\n       
+      Type | GROUP\n        GetFigmaRotationAngle | 0\n        StrokeWeight | 1\n       
+      StrokeAlign | INSIDE\n        BlendMode | PASS_THROUGH\n        ClipsContent
+      | False\n        Size | (42.43, 42.43)\n        \u2014\u2014\u2014\u2014ArcData\n           
+      StartingAngle | 0\n            EndingAngle | 0\n            InnerRadius | 0\n   
+      \u2014\u2014\u2014\u2014Frame 58/\u043C\u043E\u043D\u0435\u0442\u044B \u0430\u0432\u0442\u043E/\u0438\u043A\u043E\u043D\u043A\u0430_\u043C\u043E\u043D\u0435\u0442\u043A\u0430/Ellipse
+      5\n        isVisible | True\n        Type | ELLIPSE\n        GetFigmaRotationAngle
+      | 0\n        FillGeometry | -2074104716\n        StrokeWeight | 1\n       
+      StrokeAlign | INSIDE\n        BlendMode | PASS_THROUGH\n        Size | (42.43,
+      42.43)\n        isVisible | True\n        Type | ELLIPSE\n        GetFigmaRotationAngle
+      | 0\n        FillGeometry | -2074104716\n        StrokeWeight | 1\n       
+      StrokeAlign | INSIDE\n        BlendMode | PASS_THROUGH\n        Size | (42.43,
+      42.43)\n        \u2014\u2014\u2014\u2014Fills\n            IsVisible | True\n           
+      Type | SOLID\n            Color | RGBA(0.885, 0.683, 0.000, 1.000)\n           
+      BlendMode | NORMAL\n        \u2014\u2014\u2014\u2014ArcData\n            StartingAngle
+      | 0\n            EndingAngle | 6.283185\n            InnerRadius | 0\n       
+      \u2014\u2014\u2014\u2014Frame 58/\u043C\u043E\u043D\u0435\u0442\u044B \u0430\u0432\u0442\u043E/\u0438\u043A\u043E\u043D\u043A\u0430_\u043C\u043E\u043D\u0435\u0442\u043A\u0430/Ellipse
+      6\n            isVisible | True\n            Type | ELLIPSE\n            GetFigmaRotationAngle
+      | 0\n            FillGeometry | -981034844\n            StrokeWeight | 1\n           
+      StrokeAlign | INSIDE\n            BlendMode | PASS_THROUGH\n            Size
+      | (40.91, 40.91)\n            isVisible | True\n            Type | ELLIPSE\n           
+      GetFigmaRotationAngle | 0\n            FillGeometry | -981034844\n           
+      StrokeWeight | 1\n            StrokeAlign | INSIDE\n            BlendMode |
+      PASS_THROUGH\n            Size | (40.91, 40.91)\n            \u2014\u2014\u2014\u2014Fills\n               
+      IsVisible | True\n                Type | SOLID\n                Color | RGBA(1.000,
+      0.809, 0.165, 1.000)\n                BlendMode | NORMAL\n            \u2014\u2014\u2014\u2014ArcData\n               
+      StartingAngle | 0\n                EndingAngle | 6.283185\n               
+      InnerRadius | 0\n            \u2014\u2014\u2014\u2014Frame 58/\u043C\u043E\u043D\u0435\u0442\u044B
+      \u0430\u0432\u0442\u043E/\u0438\u043A\u043E\u043D\u043A\u0430_\u043C\u043E\u043D\u0435\u0442\u043A\u0430/Ellipse
+      7\n                isVisible | True\n                Type | ELLIPSE\n               
+      GetFigmaRotationAngle | 0\n                FillGeometry | 572430809\n               
+      StrokeWeight | 1\n                StrokeAlign | INSIDE\n                BlendMode
+      | PASS_THROUGH\n                Size | (31.82, 31.82)\n                isVisible
+      | True\n                Type | ELLIPSE\n                GetFigmaRotationAngle
+      | 0\n                FillGeometry | 572430809\n                StrokeWeight
+      | 1\n                StrokeAlign | INSIDE\n                BlendMode | PASS_THROUGH\n               
+      Size | (31.82, 31.82)\n                \u2014\u2014\u2014\u2014Fills\n                   
+      IsVisible | True\n                    Type | SOLID\n                    Color
+      | RGBA(1.000, 0.952, 0.532, 1.000)\n                    BlendMode | NORMAL\n               
+      \u2014\u2014\u2014\u2014ArcData\n                    StartingAngle | 0\n                   
+      EndingAngle | 6.283185\n                    InnerRadius | 0\n               
+      \u2014\u2014\u2014\u2014Frame 58/\u043C\u043E\u043D\u0435\u0442\u044B \u0430\u0432\u0442\u043E/\u0438\u043A\u043E\u043D\u043A\u0430_\u043C\u043E\u043D\u0435\u0442\u043A\u0430/Star
+      1\n                    isVisible | True\n                    Type | STAR\n                   
+      GetFigmaRotationAngle | 0\n                    FillGeometry | 586247835\n                   
+      StrokeWeight | 1\n                    StrokeAlign | INSIDE\n                   
+      BlendMode | PASS_THROUGH\n                    Size | (22.73, 22.73)\n                   
+      isVisible | True\n                    Type | STAR\n                    GetFigmaRotationAngle
+      | 0\n                    FillGeometry | 586247835\n                    StrokeWeight
+      | 1\n                    StrokeAlign | INSIDE\n                    BlendMode
+      | PASS_THROUGH\n                    Size | (22.73, 22.73)\n                   
+      \u2014\u2014\u2014\u2014Fills\n                        IsVisible | True\n                       
+      Type | SOLID\n                        Color | RGBA(1.000, 0.809, 0.165, 1.000)\n                       
+      BlendMode | NORMAL\n                    \u2014\u2014\u2014\u2014ArcData\n                       
+      StartingAngle | 0\n                        EndingAngle | 0\n                       
+      InnerRadius | 0\n"
+    parentIndex: -1
+    hierarchy: Frame 58
+    spritePath: 
+    link: 
+    humanizedTextPrefabName: 
+    tagReason: children not empty
+    downloadAttempsCount: 0
+    isDownloadable: 0
+    isDuplicate: 0
+    isMutual: 0
+    isEmptyMask: 0
+    isEmpty: 0
+    needDownload: 0
+    needGenerate: 0
+    forceImage: 0
+    forceContainer: 0
+    isInsideDownloadable: 0
+    insideForceImage: 0
+    hasFontAsset: 0
+--- !u!1 &455180688
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 455180689}
+  - component: {fileID: 455180692}
+  - component: {fileID: 455180691}
+  - component: {fileID: 455180690}
+  m_Layer: 5
+  m_Name: Rectangle 3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &455180689
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 455180688}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1419576567}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0.81432986, y: 1}
+  m_AnchoredPosition: {x: -0.5000305, y: -0.5}
+  m_SizeDelta: {x: -1, y: 1}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &455180690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 455180688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.7}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 922ea552a9fab4385aab4f39445a8f33, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &455180691
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 455180688}
+  m_CullTransparentMesh: 1
+--- !u!114 &455180692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 455180688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18b42570416bdca4697b2749e5bf8c5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data:
+    id: 397:1551
+    formattedName: Rectangle 3
+    spriteName: Rectangle 3 4x -541296011.png
+    tags: c9000000
+    childIndexes: 
+    fcuInstance: {fileID: 1585133153}
+    gameObject: {fileID: 455180688}
+    transformData:
+      anchorMin: {x: 0, y: 0}
+      anchorMax: {x: 0, y: 0}
+      anchoredPosition: {x: 0, y: 0}
+      sizeDelta: {x: 0, y: 0, z: 0}
+      localRotation: {x: 0, y: 0, z: 0, w: 0}
+      localScale: {x: 0, y: 0, z: 0}
+    singleColor: {r: 1, g: 1, b: 1, a: 0.7}
+    spriteSize: {x: 400, y: 220}
+    size: {x: 100, y: 55}
+    position: {x: -3583, y: -2460}
+    fcuImageType: 1
+    buttonComponent: 0
+    hash: -541296011
+    hashDataTree: "\u2014\u2014\u2014\u2014Frame 59/\u043C\u043E\u043D\u0435\u0442\u044B
+      \u0433\u0440\u0443\u043F\u043F\u0430/Rectangle 3\n    isVisible | True\n   
+      Type | RECTANGLE\n    GetFigmaRotationAngle | 0\n    FillGeometry | -727756007\n   
+      StrokeWeight | 1\n    StrokeAlign | INSIDE\n    CornerRadius | 200\n    BlendMode
+      | PASS_THROUGH\n    Size | (100.00, 55.00)\n    isVisible | True\n    Type
+      | RECTANGLE\n    GetFigmaRotationAngle | 0\n    FillGeometry | -727756007\n   
+      StrokeWeight | 1\n    StrokeAlign | INSIDE\n    CornerRadius | 200\n    BlendMode
+      | PASS_THROUGH\n    Size | (100.00, 55.00)\n    \u2014\u2014\u2014\u2014Fills\n       
+      IsVisible | True\n        Type | SOLID\n        Opacity | 0.7\n        Color
+      | RGBA(1.000, 1.000, 1.000, 1.000)\n        BlendMode | NORMAL\n    \u2014\u2014\u2014\u2014ArcData\n       
+      StartingAngle | 0\n        EndingAngle | 0\n        InnerRadius | 0\n"
+    parentIndex: 6
+    hierarchy: "Frame 59/\u043C\u043E\u043D\u0435\u0442\u044B \u0433\u0440\u0443\u043F\u043F\u0430/Rectangle
+      3"
+    spritePath: 
+    link: 
+    humanizedTextPrefabName: 
+    tagReason: SingleImage
+    downloadAttempsCount: 1
+    isDownloadable: 0
+    isDuplicate: 0
+    isMutual: 0
+    isEmptyMask: 0
+    isEmpty: 0
+    needDownload: 1
+    needGenerate: 0
+    forceImage: 1
+    forceContainer: 0
+    isInsideDownloadable: 0
+    insideForceImage: 0
+    hasFontAsset: 0
 --- !u!1 &504591646
 GameObject:
   m_ObjectHideFlags: 0
@@ -1749,6 +3107,191 @@ MonoBehaviour:
     needDownload: 0
     needGenerate: 0
     forceImage: 1
+    forceContainer: 0
+    isInsideDownloadable: 0
+    insideForceImage: 0
+    hasFontAsset: 0
+--- !u!1 &760011888
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 760011889}
+  - component: {fileID: 760011893}
+  - component: {fileID: 760011892}
+  - component: {fileID: 760011891}
+  - component: {fileID: 760011890}
+  m_Layer: 5
+  m_Name: Frame 10
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &760011889
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 760011888}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 298500108}
+  m_Father: {fileID: 417671911}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 48.99994, y: -27.5}
+  m_SizeDelta: {x: 98, y: 55}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &760011890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 760011888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.7}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 176f7ca3e18d1417180ed7f568cd8997, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &760011891
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 760011888}
+  m_CullTransparentMesh: 1
+--- !u!114 &760011892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 760011888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30649d3a9faa99c48a7b1166b86bf2a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 28
+    m_Right: 28
+    m_Top: 10
+    m_Bottom: 10
+  m_ChildAlignment: 4
+  m_Spacing: 10
+  m_ChildForceExpandWidth: 0
+  m_ChildForceExpandHeight: 0
+  m_ChildControlWidth: 0
+  m_ChildControlHeight: 0
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
+--- !u!114 &760011893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 760011888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18b42570416bdca4697b2749e5bf8c5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data:
+    id: 397:1544
+    formattedName: Frame 10
+    spriteName: Frame 10 4x 1781720028.png
+    tags: 64000000c900000001000000
+    childIndexes: 03000000
+    fcuInstance: {fileID: 1585133153}
+    gameObject: {fileID: 760011888}
+    transformData:
+      anchorMin: {x: 0, y: 0}
+      anchorMax: {x: 0, y: 0}
+      anchoredPosition: {x: 0, y: 0}
+      sizeDelta: {x: 0, y: 0, z: 0}
+      localRotation: {x: 0, y: 0, z: 0, w: 0}
+      localScale: {x: 0, y: 0, z: 0}
+    singleColor: {r: 1, g: 1, b: 1, a: 0.7}
+    spriteSize: {x: 388, y: 220}
+    size: {x: 98, y: 55}
+    position: {x: -3579, y: -2390}
+    fcuImageType: 3
+    buttonComponent: 0
+    hash: 1781720028
+    hashDataTree: "\u2014\u2014\u2014\u2014Frame 58/\u043C\u043E\u043D\u0435\u0442\u044B
+      \u0430\u0432\u0442\u043E/Frame 10\n    isVisible | True\n    Type | FRAME\n   
+      GetFigmaRotationAngle | 0\n    FillGeometry | 1592947973\n    StrokeWeight
+      | 1\n    StrokeAlign | INSIDE\n    CornerRadius | 100\n    BlendMode | PASS_THROUGH\n   
+      ClipsContent | False\n    LayoutMode | HORIZONTAL\n    ItemSpacing | 10\n   
+      PrimaryAxisAlignItems | CENTER\n    CounterAxisAlignItems | CENTER\n    PaddingLeft
+      | 28\n    PaddingRight | 28\n    PaddingTop | 10\n    PaddingBottom | 10\n   
+      Size | (98.00, 55.00)\n    isVisible | True\n    Type | FRAME\n    GetFigmaRotationAngle
+      | 0\n    FillGeometry | 1592947973\n    StrokeWeight | 1\n    StrokeAlign |
+      INSIDE\n    CornerRadius | 100\n    BlendMode | PASS_THROUGH\n    ClipsContent
+      | False\n    LayoutMode | HORIZONTAL\n    ItemSpacing | 10\n    PrimaryAxisAlignItems
+      | CENTER\n    CounterAxisAlignItems | CENTER\n    PaddingLeft | 28\n    PaddingRight
+      | 28\n    PaddingTop | 10\n    PaddingBottom | 10\n    Size | (98.00, 55.00)\n   
+      \u2014\u2014\u2014\u2014Fills\n        IsVisible | True\n        Type | SOLID\n       
+      Opacity | 0.7\n        Color | RGBA(1.000, 1.000, 1.000, 1.000)\n        BlendMode
+      | NORMAL\n    \u2014\u2014\u2014\u2014ArcData\n        StartingAngle | 0\n       
+      EndingAngle | 0\n        InnerRadius | 0\n\u2014\u2014\u2014\u2014Frame 58/\u043C\u043E\u043D\u0435\u0442\u044B
+      \u0430\u0432\u0442\u043E/Frame 10/100\n    isVisible | True\n    Type | TEXT\n   
+      GetFigmaRotationAngle | 0\n    StrokeWeight | 1\n    StrokeAlign | OUTSIDE\n   
+      BlendMode | PASS_THROUGH\n    isVisible | True\n    Type | TEXT\n    GetFigmaRotationAngle
+      | 0\n    StrokeWeight | 1\n    StrokeAlign | OUTSIDE\n    BlendMode | PASS_THROUGH\n   
+      \u2014\u2014\u2014\u2014TextStyle\n        FontFamily | Jost\n        FontWeight
+      | 500\n        FontSize | 24\n        TextAlignHorizontal | LEFT\n        TextAlignVertical
+      | CENTER\n    \u2014\u2014\u2014\u2014Fills\n        IsVisible | True\n       
+      Type | SOLID\n        Color | RGBA(0.000, 0.000, 0.000, 1.000)\n        BlendMode
+      | NORMAL\n    \u2014\u2014\u2014\u2014ArcData\n        StartingAngle | 0\n       
+      EndingAngle | 0\n        InnerRadius | 0\n"
+    parentIndex: 1
+    hierarchy: "Frame 58/\u043C\u043E\u043D\u0435\u0442\u044B \u0430\u0432\u0442\u043E/Frame
+      10"
+    spritePath: 
+    link: 
+    humanizedTextPrefabName: 
+    tagReason: children not empty
+    downloadAttempsCount: 0
+    isDownloadable: 0
+    isDuplicate: 0
+    isMutual: 0
+    isEmptyMask: 0
+    isEmpty: 0
+    needDownload: 0
+    needGenerate: 0
+    forceImage: 0
     forceContainer: 0
     isInsideDownloadable: 0
     insideForceImage: 0
@@ -3203,6 +4746,189 @@ MonoBehaviour:
     isInsideDownloadable: 0
     insideForceImage: 0
     hasFontAsset: 0
+--- !u!1 &1419576566
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1419576567}
+  - component: {fileID: 1419576568}
+  m_Layer: 5
+  m_Name: "\u043C\u043E\u043D\u0435\u0442\u044B \u0433\u0440\u0443\u043F\u043F\u0430"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1419576567
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1419576566}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 455180689}
+  - {fileID: 1669098846}
+  - {fileID: 53092462}
+  m_Father: {fileID: 107380545}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0.21429443, y: 0.5}
+  m_SizeDelta: {x: 0.42858887, y: -1}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1419576568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1419576566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18b42570416bdca4697b2749e5bf8c5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data:
+    id: 397:1565
+    formattedName: "\u043C\u043E\u043D\u0435\u0442\u044B \u0433\u0440\u0443\u043F\u043F\u0430"
+    spriteName: 
+    tags: 01000000
+    childIndexes: 070000000800000009000000
+    fcuInstance: {fileID: 1585133153}
+    gameObject: {fileID: 1419576566}
+    transformData:
+      anchorMin: {x: 0, y: 0}
+      anchorMax: {x: 0, y: 0}
+      anchoredPosition: {x: 0, y: 0}
+      sizeDelta: {x: 0, y: 0, z: 0}
+      localRotation: {x: 0, y: 0, z: 0, w: 0}
+      localScale: {x: 0, y: 0, z: 0}
+    singleColor: {r: 0, g: 0, b: 0, a: 0}
+    spriteSize: {x: 0, y: 0}
+    size: {x: 123.42859, y: 55}
+    position: {x: -3583, y: -2460}
+    fcuImageType: 0
+    buttonComponent: 0
+    hash: 1334674658
+    hashDataTree: "\u2014\u2014\u2014\u2014Frame 59/\u043C\u043E\u043D\u0435\u0442\u044B
+      \u0433\u0440\u0443\u043F\u043F\u0430\n    isVisible | True\n    Type | GROUP\n   
+      GetFigmaRotationAngle | 0\n    StrokeWeight | 1\n    StrokeAlign | INSIDE\n   
+      CornerRadiuses | 0 0 0 0\n    BlendMode | PASS_THROUGH\n    ClipsContent |
+      False\n    Size | (123.43, 55.00)\n    isVisible | True\n    Type | GROUP\n   
+      GetFigmaRotationAngle | 0\n    StrokeWeight | 1\n    StrokeAlign | INSIDE\n   
+      CornerRadiuses | 0 0 0 0\n    BlendMode | PASS_THROUGH\n    ClipsContent |
+      False\n    Size | (123.43, 55.00)\n    \u2014\u2014\u2014\u2014ArcData\n       
+      StartingAngle | 0\n        EndingAngle | 0\n        InnerRadius | 0\n\u2014\u2014\u2014\u2014Frame
+      59/\u043C\u043E\u043D\u0435\u0442\u044B \u0433\u0440\u0443\u043F\u043F\u0430/Rectangle
+      3\n    isVisible | True\n    Type | RECTANGLE\n    GetFigmaRotationAngle |
+      0\n    FillGeometry | -727756007\n    StrokeWeight | 1\n    StrokeAlign | INSIDE\n   
+      CornerRadius | 200\n    BlendMode | PASS_THROUGH\n    Size | (100.00, 55.00)\n   
+      isVisible | True\n    Type | RECTANGLE\n    GetFigmaRotationAngle | 0\n   
+      FillGeometry | -727756007\n    StrokeWeight | 1\n    StrokeAlign | INSIDE\n   
+      CornerRadius | 200\n    BlendMode | PASS_THROUGH\n    Size | (100.00, 55.00)\n   
+      \u2014\u2014\u2014\u2014Fills\n        IsVisible | True\n        Type | SOLID\n       
+      Opacity | 0.7\n        Color | RGBA(1.000, 1.000, 1.000, 1.000)\n        BlendMode
+      | NORMAL\n    \u2014\u2014\u2014\u2014ArcData\n        StartingAngle | 0\n       
+      EndingAngle | 0\n        InnerRadius | 0\n    \u2014\u2014\u2014\u2014Frame
+      59/\u043C\u043E\u043D\u0435\u0442\u044B \u0433\u0440\u0443\u043F\u043F\u0430/\u0438\u043A\u043E\u043D\u043A\u0430_\u043C\u043E\u043D\u0435\u0442\u043A\u0430\n       
+      isVisible | True\n        Type | GROUP\n        GetFigmaRotationAngle | 0\n       
+      StrokeWeight | 1\n        StrokeAlign | INSIDE\n        BlendMode | PASS_THROUGH\n       
+      ClipsContent | False\n        Size | (42.43, 42.43)\n        isVisible | True\n       
+      Type | GROUP\n        GetFigmaRotationAngle | 0\n        StrokeWeight | 1\n       
+      StrokeAlign | INSIDE\n        BlendMode | PASS_THROUGH\n        ClipsContent
+      | False\n        Size | (42.43, 42.43)\n        \u2014\u2014\u2014\u2014ArcData\n           
+      StartingAngle | 0\n            EndingAngle | 0\n            InnerRadius | 0\n   
+      \u2014\u2014\u2014\u2014Frame 59/\u043C\u043E\u043D\u0435\u0442\u044B \u0433\u0440\u0443\u043F\u043F\u0430/\u0438\u043A\u043E\u043D\u043A\u0430_\u043C\u043E\u043D\u0435\u0442\u043A\u0430/Ellipse
+      5\n        isVisible | True\n        Type | ELLIPSE\n        GetFigmaRotationAngle
+      | 0\n        FillGeometry | -2074104716\n        StrokeWeight | 1\n       
+      StrokeAlign | INSIDE\n        BlendMode | PASS_THROUGH\n        Size | (42.43,
+      42.43)\n        isVisible | True\n        Type | ELLIPSE\n        GetFigmaRotationAngle
+      | 0\n        FillGeometry | -2074104716\n        StrokeWeight | 1\n       
+      StrokeAlign | INSIDE\n        BlendMode | PASS_THROUGH\n        Size | (42.43,
+      42.43)\n        \u2014\u2014\u2014\u2014Fills\n            IsVisible | True\n           
+      Type | SOLID\n            Color | RGBA(0.885, 0.683, 0.000, 1.000)\n           
+      BlendMode | NORMAL\n        \u2014\u2014\u2014\u2014ArcData\n            StartingAngle
+      | 0\n            EndingAngle | 6.283185\n            InnerRadius | 0\n       
+      \u2014\u2014\u2014\u2014Frame 59/\u043C\u043E\u043D\u0435\u0442\u044B \u0433\u0440\u0443\u043F\u043F\u0430/\u0438\u043A\u043E\u043D\u043A\u0430_\u043C\u043E\u043D\u0435\u0442\u043A\u0430/Ellipse
+      6\n            isVisible | True\n            Type | ELLIPSE\n            GetFigmaRotationAngle
+      | 0\n            FillGeometry | -981034844\n            StrokeWeight | 1\n           
+      StrokeAlign | INSIDE\n            BlendMode | PASS_THROUGH\n            Size
+      | (40.91, 40.91)\n            isVisible | True\n            Type | ELLIPSE\n           
+      GetFigmaRotationAngle | 0\n            FillGeometry | -981034844\n           
+      StrokeWeight | 1\n            StrokeAlign | INSIDE\n            BlendMode |
+      PASS_THROUGH\n            Size | (40.91, 40.91)\n            \u2014\u2014\u2014\u2014Fills\n               
+      IsVisible | True\n                Type | SOLID\n                Color | RGBA(1.000,
+      0.809, 0.165, 1.000)\n                BlendMode | NORMAL\n            \u2014\u2014\u2014\u2014ArcData\n               
+      StartingAngle | 0\n                EndingAngle | 6.283185\n               
+      InnerRadius | 0\n        \u2014\u2014\u2014\u2014Frame 59/\u043C\u043E\u043D\u0435\u0442\u044B
+      \u0433\u0440\u0443\u043F\u043F\u0430/100\n            isVisible | True\n           
+      Type | TEXT\n            GetFigmaRotationAngle | 0\n            StrokeWeight
+      | 1\n            StrokeAlign | OUTSIDE\n            BlendMode | PASS_THROUGH\n           
+      isVisible | True\n            Type | TEXT\n            GetFigmaRotationAngle
+      | 0\n            StrokeWeight | 1\n            StrokeAlign | OUTSIDE\n           
+      BlendMode | PASS_THROUGH\n            \u2014\u2014\u2014\u2014TextStyle\n               
+      FontFamily | Jost\n                FontWeight | 500\n                FontSize
+      | 24\n                TextAlignHorizontal | LEFT\n                TextAlignVertical
+      | CENTER\n            \u2014\u2014\u2014\u2014Fills\n                IsVisible
+      | True\n                Type | SOLID\n                Color | RGBA(0.000, 0.000,
+      0.000, 1.000)\n                BlendMode | NORMAL\n            \u2014\u2014\u2014\u2014ArcData\n               
+      StartingAngle | 0\n                EndingAngle | 0\n                InnerRadius
+      | 0\n            \u2014\u2014\u2014\u2014Frame 59/\u043C\u043E\u043D\u0435\u0442\u044B
+      \u0433\u0440\u0443\u043F\u043F\u0430/\u0438\u043A\u043E\u043D\u043A\u0430_\u043C\u043E\u043D\u0435\u0442\u043A\u0430/Ellipse
+      7\n                isVisible | True\n                Type | ELLIPSE\n               
+      GetFigmaRotationAngle | 0\n                FillGeometry | 572430809\n               
+      StrokeWeight | 1\n                StrokeAlign | INSIDE\n                BlendMode
+      | PASS_THROUGH\n                Size | (31.82, 31.82)\n                isVisible
+      | True\n                Type | ELLIPSE\n                GetFigmaRotationAngle
+      | 0\n                FillGeometry | 572430809\n                StrokeWeight
+      | 1\n                StrokeAlign | INSIDE\n                BlendMode | PASS_THROUGH\n               
+      Size | (31.82, 31.82)\n                \u2014\u2014\u2014\u2014Fills\n                   
+      IsVisible | True\n                    Type | SOLID\n                    Color
+      | RGBA(1.000, 0.952, 0.532, 1.000)\n                    BlendMode | NORMAL\n               
+      \u2014\u2014\u2014\u2014ArcData\n                    StartingAngle | 0\n                   
+      EndingAngle | 6.283185\n                    InnerRadius | 0\n               
+      \u2014\u2014\u2014\u2014Frame 59/\u043C\u043E\u043D\u0435\u0442\u044B \u0433\u0440\u0443\u043F\u043F\u0430/\u0438\u043A\u043E\u043D\u043A\u0430_\u043C\u043E\u043D\u0435\u0442\u043A\u0430/Star
+      1\n                    isVisible | True\n                    Type | STAR\n                   
+      GetFigmaRotationAngle | 0\n                    FillGeometry | 586247835\n                   
+      StrokeWeight | 1\n                    StrokeAlign | INSIDE\n                   
+      BlendMode | PASS_THROUGH\n                    Size | (22.73, 22.73)\n                   
+      isVisible | True\n                    Type | STAR\n                    GetFigmaRotationAngle
+      | 0\n                    FillGeometry | 586247835\n                    StrokeWeight
+      | 1\n                    StrokeAlign | INSIDE\n                    BlendMode
+      | PASS_THROUGH\n                    Size | (22.73, 22.73)\n                   
+      \u2014\u2014\u2014\u2014Fills\n                        IsVisible | True\n                       
+      Type | SOLID\n                        Color | RGBA(1.000, 0.809, 0.165, 1.000)\n                       
+      BlendMode | NORMAL\n                    \u2014\u2014\u2014\u2014ArcData\n                       
+      StartingAngle | 0\n                        EndingAngle | 0\n                       
+      InnerRadius | 0\n"
+    parentIndex: 5
+    hierarchy: "Frame 59/\u043C\u043E\u043D\u0435\u0442\u044B \u0433\u0440\u0443\u043F\u043F\u0430"
+    spritePath: 
+    link: 
+    humanizedTextPrefabName: 
+    tagReason: children not empty
+    downloadAttempsCount: 0
+    isDownloadable: 0
+    isDuplicate: 0
+    isMutual: 0
+    isEmptyMask: 0
+    isEmpty: 0
+    needDownload: 0
+    needGenerate: 0
+    forceImage: 0
+    forceContainer: 0
+    isInsideDownloadable: 0
+    insideForceImage: 0
+    hasFontAsset: 0
 --- !u!1 &1532244064
 GameObject:
   m_ObjectHideFlags: 0
@@ -3342,6 +5068,782 @@ MonoBehaviour:
     isEmptyMask: 0
     isEmpty: 0
     needDownload: 1
+    needGenerate: 0
+    forceImage: 1
+    forceContainer: 0
+    isInsideDownloadable: 0
+    insideForceImage: 0
+    hasFontAsset: 0
+--- !u!1 &1585133151
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1585133152}
+  - component: {fileID: 1585133153}
+  - component: {fileID: 1585133155}
+  - component: {fileID: 1585133154}
+  m_Layer: 0
+  m_Name: UI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1585133152
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1585133151}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 427190243}
+  - {fileID: 107380545}
+  m_Father: {fileID: 219700587}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 621, y: 1344}
+  m_SizeDelta: {x: 1242, y: 2688}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1585133153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1585133151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb50b5b4038022744b7d09fe41d03007, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvasDrawer:
+    textDrawer: {}
+    autoLayoutDrawer: {}
+    buttonDrawer:
+      buttons: []
+  imageTypeSetter:
+    downloadableIds:
+    - 397:1546
+    - 397:1551
+    - 397:1558
+    generativeIds:
+    - 397:1544
+    drawableIds: []
+    noneIds: []
+  settings:
+    mainSettings:
+      uiFramework: 0
+      imageFormat: 0
+      imageScale: 4
+      goLayer: 5
+      spritesPath: Assets\Sprites
+      uguiOutputPath: Assets\UGUI Output
+      redownloadSprites: 0
+      rawImport: 0
+      windowMode: 0
+      projectUrl: T7ESrBfAfrX2kdYccQHK21
+      componentsUrls:
+      - 
+      - 
+      - 
+      - 
+      - 
+    componentSettings:
+      imageComponent: 0
+      shadowComponent: 0
+      textComponent: 0
+      buttonComponent: 0
+      useI2Localization: 0
+    puiSettings:
+      type: 0
+      raycastTarget: 1
+      preserveAspect: 1
+      raycastPadding: {x: 0, y: 0, z: 0, w: 0}
+      falloffDistance: 1
+    mpuikitSettings:
+      type: 0
+      raycastTarget: 1
+      preserveAspect: 1
+      raycastPadding: {x: 0, y: 0, z: 0, w: 0}
+      falloffDistance: 0.5
+    unityImageSettings:
+      type: 0
+      raycastTarget: 1
+      preserveAspect: 1
+      raycastPadding: {x: 0, y: 0, z: 0, w: 0}
+      maskable: 1
+    shapes2D_Settings:
+      type: 0
+      raycastTarget: 1
+      preserveAspect: 1
+      raycastPadding: {x: 0, y: 0, z: 0, w: 0}
+    textMeshSettings:
+      autoSize: 0
+      overrideTags: 0
+      wrapping: 1
+      richText: 1
+      raycastTarget: 1
+      parseEscapeCharacters: 1
+      visibleDescender: 1
+      kerning: 1
+      extraPadding: 0
+      overflow: 0
+      horizontalMapping: 0
+      verticalMapping: 0
+      geometrySorting: 0
+    unityTextSettings:
+      fontLineSpacing: 1
+      horizontalWrapMode: 0
+      verticalWrapMode: 0
+      bestFit: 1
+    debugSettings:
+      logDefault: 1
+      logSetTag: 1
+      logIsDownloadable: 1
+      logTransform: 1
+      logGameObjectDrawer: 1
+      debugMode: 0
+    prefabSettings:
+      textPrefabNameType: 0
+  events:
+    onProjectDownloadFail:
+      m_PersistentCalls:
+        m_Calls: []
+    onProjectDownloadStart:
+      m_PersistentCalls:
+        m_Calls: []
+    onProjectDownloaded:
+      m_PersistentCalls:
+        m_Calls: []
+    onImportStart:
+      m_PersistentCalls:
+        m_Calls: []
+    onImportComplete:
+      m_PersistentCalls:
+        m_Calls: []
+    onImportFail:
+      m_PersistentCalls:
+        m_Calls: []
+    onObjectInstantiate:
+      m_PersistentCalls:
+        m_Calls: []
+    onAddComponent:
+      m_PersistentCalls:
+        m_Calls: []
+  prefabCreator:
+    prefabsPath: Assets/Prefabs
+    pstructs: []
+  inspectorDrawer:
+    SelectableHamburgerItems:
+    - id: FrameListKey
+      fade:
+        m_Target: 1
+        speed: 4
+        m_Value: 1
+      checkBoxValue:
+        value: 0
+        temp: 0
+      guiContent:
+        m_Text: FRAMES TO IMPORT (50/50)
+        m_Image: {fileID: 0}
+        m_Tooltip: 
+      buttonGuiContent:
+        m_Text: 
+        m_Image: {fileID: 0}
+        m_Tooltip: 
+    - id: "0:1_\u044D\u043A\u0440\u0430\u043D\u044B"
+      fade:
+        m_Target: 0
+        speed: 2
+        m_Value: 0
+      checkBoxValue:
+        value: 0
+        temp: 0
+      guiContent:
+        m_Text: "\u044D\u043A\u0440\u0430\u043D\u044B (33/33)"
+        m_Image: {fileID: 0}
+        m_Tooltip: 
+      buttonGuiContent:
+        m_Text: 
+        m_Image: {fileID: 0}
+        m_Tooltip: 
+    - id: "346:865_\u0433\u043B\u0430\u0432\u043D\u043E\u0435"
+      fade:
+        m_Target: 1
+        speed: 2
+        m_Value: 1
+      checkBoxValue:
+        value: 0
+        temp: 0
+      guiContent:
+        m_Text: "\u0433\u043B\u0430\u0432\u043D\u043E\u0435 (5/5)"
+        m_Image: {fileID: 0}
+        m_Tooltip: 
+      buttonGuiContent:
+        m_Text: 
+        m_Image: {fileID: 0}
+        m_Tooltip: 
+    - id: 230:29_Page 4
+      fade:
+        m_Target: 0
+        speed: 2
+        m_Value: 0
+      checkBoxValue:
+        value: 0
+        temp: 0
+      guiContent:
+        m_Text: Page 4 (1/1)
+        m_Image: {fileID: 0}
+        m_Tooltip: 
+      buttonGuiContent:
+        m_Text: 
+        m_Image: {fileID: 0}
+        m_Tooltip: 
+    - id: 2:13_user flow
+      fade:
+        m_Target: 0
+        speed: 2
+        m_Value: 0
+      checkBoxValue:
+        value: 0
+        temp: 0
+      guiContent:
+        m_Text: user flow (11/11)
+        m_Image: {fileID: 0}
+        m_Tooltip: 
+      buttonGuiContent:
+        m_Text: 
+        m_Image: {fileID: 0}
+        m_Tooltip: 
+    selectableFrames:
+    - Id: 1:2
+      ParentId: "0:1_\u044D\u043A\u0440\u0430\u043D\u044B"
+      ParentName: "\u044D\u043A\u0440\u0430\u043D\u044B"
+      Name: 1
+      Selected: 0
+    - Id: 42:69
+      ParentId: "0:1_\u044D\u043A\u0440\u0430\u043D\u044B"
+      ParentName: "\u044D\u043A\u0440\u0430\u043D\u044B"
+      Name: 5
+      Selected: 0
+    - Id: 42:97
+      ParentId: "0:1_\u044D\u043A\u0440\u0430\u043D\u044B"
+      ParentName: "\u044D\u043A\u0440\u0430\u043D\u044B"
+      Name: 6
+      Selected: 0
+    - Id: 1:3
+      ParentId: "0:1_\u044D\u043A\u0440\u0430\u043D\u044B"
+      ParentName: "\u044D\u043A\u0440\u0430\u043D\u044B"
+      Name: 2
+      Selected: 0
+    - Id: 313:29
+      ParentId: "0:1_\u044D\u043A\u0440\u0430\u043D\u044B"
+      ParentName: "\u044D\u043A\u0440\u0430\u043D\u044B"
+      Name: 12
+      Selected: 0
+    - Id: 326:236
+      ParentId: "0:1_\u044D\u043A\u0440\u0430\u043D\u044B"
+      ParentName: "\u044D\u043A\u0440\u0430\u043D\u044B"
+      Name: 15
+      Selected: 0
+    - Id: 339:453
+      ParentId: "0:1_\u044D\u043A\u0440\u0430\u043D\u044B"
+      ParentName: "\u044D\u043A\u0440\u0430\u043D\u044B"
+      Name: 17
+      Selected: 0
+    - Id: 340:607
+      ParentId: "0:1_\u044D\u043A\u0440\u0430\u043D\u044B"
+      ParentName: "\u044D\u043A\u0440\u0430\u043D\u044B"
+      Name: Frame 52
+      Selected: 0
+    - Id: 339:473
+      ParentId: "0:1_\u044D\u043A\u0440\u0430\u043D\u044B"
+      ParentName: "\u044D\u043A\u0440\u0430\u043D\u044B"
+      Name: Frame 38
+      Selected: 0
+    - Id: 339:475
+      ParentId: "0:1_\u044D\u043A\u0440\u0430\u043D\u044B"
+      ParentName: "\u044D\u043A\u0440\u0430\u043D\u044B"
+      Name: Frame 40
+      Selected: 0
+    - Id: 339:480
+      ParentId: "0:1_\u044D\u043A\u0440\u0430\u043D\u044B"
+      ParentName: "\u044D\u043A\u0440\u0430\u043D\u044B"
+      Name: Frame 37
+      Selected: 0
+    - Id: 339:482
+      ParentId: "0:1_\u044D\u043A\u0440\u0430\u043D\u044B"
+      ParentName: "\u044D\u043A\u0440\u0430\u043D\u044B"
+      Name: Frame 41
+      Selected: 0
+    - Id: 339:492
+      ParentId: "0:1_\u044D\u043A\u0440\u0430\u043D\u044B"
+      ParentName: "\u044D\u043A\u0440\u0430\u043D\u044B"
+      Name: button_levels
+      Selected: 0
+    - Id: 339:500
+      ParentId: "0:1_\u044D\u043A\u0440\u0430\u043D\u044B"
+      ParentName: "\u044D\u043A\u0440\u0430\u043D\u044B"
+      Name: button_levels
+      Selected: 0
+    - Id: 339:508
+      ParentId: "0:1_\u044D\u043A\u0440\u0430\u043D\u044B"
+      ParentName: "\u044D\u043A\u0440\u0430\u043D\u044B"
+      Name: button_levels
+      Selected: 0
+    - Id: 336:364
+      ParentId: "0:1_\u044D\u043A\u0440\u0430\u043D\u044B"
+      ParentName: "\u044D\u043A\u0440\u0430\u043D\u044B"
+      Name: Frame 39
+      Selected: 0
+    - Id: 336:366
+      ParentId: "0:1_\u044D\u043A\u0440\u0430\u043D\u044B"
+      ParentName: "\u044D\u043A\u0440\u0430\u043D\u044B"
+      Name: Frame 38
+      Selected: 0
+    - Id: 336:368
+      ParentId: "0:1_\u044D\u043A\u0440\u0430\u043D\u044B"
+      ParentName: "\u044D\u043A\u0440\u0430\u043D\u044B"
+      Name: Frame 40
+      Selected: 0
+    - Id: 326:250
+      ParentId: "0:1_\u044D\u043A\u0440\u0430\u043D\u044B"
+      ParentName: "\u044D\u043A\u0440\u0430\u043D\u044B"
+      Name: Frame 28
+      Selected: 0
+    - Id: 325:73
+      ParentId: "0:1_\u044D\u043A\u0440\u0430\u043D\u044B"
+      ParentName: "\u044D\u043A\u0440\u0430\u043D\u044B"
+      Name: Frame 20
+      Selected: 0
+    - Id: 325:134
+      ParentId: "0:1_\u044D\u043A\u0440\u0430\u043D\u044B"
+      ParentName: "\u044D\u043A\u0440\u0430\u043D\u044B"
+      Name: button_levels
+      Selected: 0
+    - Id: 7:228
+      ParentId: "0:1_\u044D\u043A\u0440\u0430\u043D\u044B"
+      ParentName: "\u044D\u043A\u0440\u0430\u043D\u044B"
+      Name: 3
+      Selected: 0
+    - Id: 7:273
+      ParentId: "0:1_\u044D\u043A\u0440\u0430\u043D\u044B"
+      ParentName: "\u044D\u043A\u0440\u0430\u043D\u044B"
+      Name: 4
+      Selected: 0
+    - Id: 86:3
+      ParentId: "0:1_\u044D\u043A\u0440\u0430\u043D\u044B"
+      ParentName: "\u044D\u043A\u0440\u0430\u043D\u044B"
+      Name: 8
+      Selected: 0
+    - Id: 155:42
+      ParentId: "0:1_\u044D\u043A\u0440\u0430\u043D\u044B"
+      ParentName: "\u044D\u043A\u0440\u0430\u043D\u044B"
+      Name: 10
+      Selected: 0
+    - Id: 167:97
+      ParentId: "0:1_\u044D\u043A\u0440\u0430\u043D\u044B"
+      ParentName: "\u044D\u043A\u0440\u0430\u043D\u044B"
+      Name: 11
+      Selected: 0
+    - Id: 86:52
+      ParentId: "0:1_\u044D\u043A\u0440\u0430\u043D\u044B"
+      ParentName: "\u044D\u043A\u0440\u0430\u043D\u044B"
+      Name: 9
+      Selected: 0
+    - Id: 338:418
+      ParentId: "0:1_\u044D\u043A\u0440\u0430\u043D\u044B"
+      ParentName: "\u044D\u043A\u0440\u0430\u043D\u044B"
+      Name: 16
+      Selected: 0
+    - Id: 86:76
+      ParentId: "0:1_\u044D\u043A\u0440\u0430\u043D\u044B"
+      ParentName: "\u044D\u043A\u0440\u0430\u043D\u044B"
+      Name: Frame 7
+      Selected: 0
+    - Id: 325:91
+      ParentId: "0:1_\u044D\u043A\u0440\u0430\u043D\u044B"
+      ParentName: "\u044D\u043A\u0440\u0430\u043D\u044B"
+      Name: iPhone 16 Pro - 1
+      Selected: 0
+    - Id: 334:332
+      ParentId: "0:1_\u044D\u043A\u0440\u0430\u043D\u044B"
+      ParentName: "\u044D\u043A\u0440\u0430\u043D\u044B"
+      Name: Frame 34
+      Selected: 0
+    - Id: 334:333
+      ParentId: "0:1_\u044D\u043A\u0440\u0430\u043D\u044B"
+      ParentName: "\u044D\u043A\u0440\u0430\u043D\u044B"
+      Name: Frame 35
+      Selected: 0
+    - Id: 334:335
+      ParentId: "0:1_\u044D\u043A\u0440\u0430\u043D\u044B"
+      ParentName: "\u044D\u043A\u0440\u0430\u043D\u044B"
+      Name: Frame 36
+      Selected: 0
+    - Id: 346:866
+      ParentId: "346:865_\u0433\u043B\u0430\u0432\u043D\u043E\u0435"
+      ParentName: "\u0433\u043B\u0430\u0432\u043D\u043E\u0435"
+      Name: central_play_frame
+      Selected: 0
+    - Id: 397:1489
+      ParentId: "346:865_\u0433\u043B\u0430\u0432\u043D\u043E\u0435"
+      ParentName: "\u0433\u043B\u0430\u0432\u043D\u043E\u0435"
+      Name: 1central_play_frame
+      Selected: 0
+    - Id: 397:1566
+      ParentId: "346:865_\u0433\u043B\u0430\u0432\u043D\u043E\u0435"
+      ParentName: "\u0433\u043B\u0430\u0432\u043D\u043E\u0435"
+      Name: Frame 58
+      Selected: 1
+    - Id: 387:1390
+      ParentId: "346:865_\u0433\u043B\u0430\u0432\u043D\u043E\u0435"
+      ParentName: "\u0433\u043B\u0430\u0432\u043D\u043E\u0435"
+      Name: UIplay_frame
+      Selected: 0
+    - Id: 346:901
+      ParentId: "346:865_\u0433\u043B\u0430\u0432\u043D\u043E\u0435"
+      ParentName: "\u0433\u043B\u0430\u0432\u043D\u043E\u0435"
+      Name: levels_frame
+      Selected: 0
+    - Id: 346:1062
+      ParentId: "346:865_\u0433\u043B\u0430\u0432\u043D\u043E\u0435"
+      ParentName: "\u0433\u043B\u0430\u0432\u043D\u043E\u0435"
+      Name: shop_frame
+      Selected: 0
+    - Id: 346:1118
+      ParentId: "346:865_\u0433\u043B\u0430\u0432\u043D\u043E\u0435"
+      ParentName: "\u0433\u043B\u0430\u0432\u043D\u043E\u0435"
+      Name: ui kit
+      Selected: 0
+    - Id: 397:1567
+      ParentId: "346:865_\u0433\u043B\u0430\u0432\u043D\u043E\u0435"
+      ParentName: "\u0433\u043B\u0430\u0432\u043D\u043E\u0435"
+      Name: Frame 59
+      Selected: 1
+    - Id: 230:30
+      ParentId: 230:29_Page 4
+      ParentName: Page 4
+      Name: 2
+      Selected: 0
+    - Id: 2:14
+      ParentId: 2:13_user flow
+      ParentName: user flow
+      Name: "1.0 \u0417\u0430\u0433\u0440\u0443\u0437\u043A\u0430"
+      Selected: 0
+    - Id: 2:16
+      ParentId: 2:13_user flow
+      ParentName: user flow
+      Name: "2.0 \u0417\u0430\u0433\u0440\u0443\u0437\u043A\u0430"
+      Selected: 0
+    - Id: 2:19
+      ParentId: 2:13_user flow
+      ParentName: user flow
+      Name: "2.0 \u041C\u0435\u043D\u044E"
+      Selected: 0
+    - Id: 2:32
+      ParentId: 2:13_user flow
+      ParentName: user flow
+      Name: "3.0 \u0422\u0435\u043A\u0443\u0449\u0438\u0439 \u0443\u0440\u043E\u0432\u0435\u043D\u044C"
+      Selected: 0
+    - Id: 2:38
+      ParentId: 2:13_user flow
+      ParentName: user flow
+      Name: "3.1 \u041F\u0430\u0443\u0437\u0430"
+      Selected: 0
+    - Id: 2:43
+      ParentId: 2:13_user flow
+      ParentName: user flow
+      Name: "4.1 \u0412\u044B\u0438\u0433\u0440\u044B\u0448"
+      Selected: 0
+    - Id: 2:51
+      ParentId: 2:13_user flow
+      ParentName: user flow
+      Name: "4.0 \u0418\u0441\u0445\u043E\u0434"
+      Selected: 0
+    - Id: 2:54
+      ParentId: 2:13_user flow
+      ParentName: user flow
+      Name: "2.1 \u0423\u0440\u043E\u0432\u043D\u0438"
+      Selected: 0
+    - Id: 2:56
+      ParentId: 2:13_user flow
+      ParentName: user flow
+      Name: "4.2 \u041F\u0440\u043E\u0438\u0433\u0440\u044B\u0448"
+      Selected: 0
+    - Id: 2:58
+      ParentId: 2:13_user flow
+      ParentName: user flow
+      Name: "2.2 \u041D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0438"
+      Selected: 0
+    - Id: 2:63
+      ParentId: 2:13_user flow
+      ParentName: user flow
+      Name: "2.3 \u041C\u0430\u0433\u0430\u0437\u0438\u043D \u0441\u043A\u0438\u043D\u043E\u0432"
+      Selected: 0
+  requestSender:
+    pbarProgress: 0
+    pbarBytes: 0
+    _requestCount: 0
+    _timeoutActive: 0
+    _remainingTime: 0
+  fontDownloader:
+    tmpDownloader:
+      samplingPointSize: 90
+      atlasPadding: 5
+      renderMode: 4165
+      atlasWidth: 512
+      atlasHeight: 512
+      atlasPopulationMode: 1
+      enableMultiAtlasSupport: 1
+      unityTmpFonts:
+        missing: []
+        existing: []
+    gFontsApi:
+      fontSubsets: 1
+  fontLoader:
+    ttfFontsPath: Assets/Fonts/Ttf
+    tmpFontsPath: Assets/Fonts/Sdf
+    ttfFonts: []
+    tmpFonts: []
+  currentProject:
+    lastImportedFrames: []
+    localPrefabs: []
+  spriteGenerator:
+    rectTransform: {fileID: 0}
+    meshRenderer: {fileID: 0}
+    meshFilter: {fileID: 0}
+    camera: {fileID: 0}
+  guid: 904c0927
+--- !u!114 &1585133154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1585133151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!223 &1585133155
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1585133151}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_UpdateRectTransformForStandalone: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!1 &1669098845
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1669098846}
+  - component: {fileID: 1669098849}
+  - component: {fileID: 1669098848}
+  - component: {fileID: 1669098847}
+  m_Layer: 5
+  m_Name: "\u0438\u043A\u043E\u043D\u043A\u0430_\u043C\u043E\u043D\u0435\u0442\u043A\u0430"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1669098846
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1669098845}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1419576567}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.65337235, y: 0.07363762}
+  m_AnchorMax: {x: 1, y: 0.87122834}
+  m_AnchoredPosition: {x: -0.25, y: 0.25}
+  m_SizeDelta: {x: -0.5, y: -0.5}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1669098847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1669098845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: cdd48c217a74d458cb132083b7dffc5f, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1669098848
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1669098845}
+  m_CullTransparentMesh: 1
+--- !u!114 &1669098849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1669098845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18b42570416bdca4697b2749e5bf8c5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data:
+    id: 397:1558
+    formattedName: "\u0438\u043A\u043E\u043D\u043A\u0430_\u043C\u043E\u043D\u0435\u0442\u043A\u0430"
+    spriteName: "\u0438\u043A\u043E\u043D\u043A\u0430_\u043C\u043E\u043D\u0435\u0442\u043A\u0430
+      4x -760620871.png"
+    tags: c9000000
+    childIndexes: 
+    fcuInstance: {fileID: 1585133153}
+    gameObject: {fileID: 1669098845}
+    transformData:
+      anchorMin: {x: 0, y: 0}
+      anchorMax: {x: 0, y: 0}
+      anchoredPosition: {x: 0, y: 0}
+      sizeDelta: {x: 0, y: 0, z: 0}
+      localRotation: {x: 0, y: 0, z: 0, w: 0}
+      localScale: {x: 0, y: 0, z: 0}
+    singleColor: {r: 0, g: 0, b: 0, a: 0}
+    spriteSize: {x: 170, y: 170}
+    size: {x: 42.5, y: 42.5}
+    position: {x: -3502, y: -2467}
+    fcuImageType: 1
+    buttonComponent: 0
+    hash: -760620871
+    hashDataTree: "\u2014\u2014\u2014\u2014Frame 59/\u043C\u043E\u043D\u0435\u0442\u044B
+      \u0433\u0440\u0443\u043F\u043F\u0430/\u0438\u043A\u043E\u043D\u043A\u0430_\u043C\u043E\u043D\u0435\u0442\u043A\u0430\n   
+      isVisible | True\n    Type | GROUP\n    GetFigmaRotationAngle | 0\n    StrokeWeight
+      | 1\n    StrokeAlign | INSIDE\n    BlendMode | PASS_THROUGH\n    ClipsContent
+      | False\n    Size | (42.43, 42.43)\n    isVisible | True\n    Type | GROUP\n   
+      GetFigmaRotationAngle | 0\n    StrokeWeight | 1\n    StrokeAlign | INSIDE\n   
+      BlendMode | PASS_THROUGH\n    ClipsContent | False\n    Size | (42.43, 42.43)\n   
+      \u2014\u2014\u2014\u2014ArcData\n        StartingAngle | 0\n        EndingAngle
+      | 0\n        InnerRadius | 0\n\u2014\u2014\u2014\u2014Frame 59/\u043C\u043E\u043D\u0435\u0442\u044B
+      \u0433\u0440\u0443\u043F\u043F\u0430/\u0438\u043A\u043E\u043D\u043A\u0430_\u043C\u043E\u043D\u0435\u0442\u043A\u0430/Ellipse
+      5\n    isVisible | True\n    Type | ELLIPSE\n    GetFigmaRotationAngle | 0\n   
+      FillGeometry | -2074104716\n    StrokeWeight | 1\n    StrokeAlign | INSIDE\n   
+      BlendMode | PASS_THROUGH\n    Size | (42.43, 42.43)\n    isVisible | True\n   
+      Type | ELLIPSE\n    GetFigmaRotationAngle | 0\n    FillGeometry | -2074104716\n   
+      StrokeWeight | 1\n    StrokeAlign | INSIDE\n    BlendMode | PASS_THROUGH\n   
+      Size | (42.43, 42.43)\n    \u2014\u2014\u2014\u2014Fills\n        IsVisible
+      | True\n        Type | SOLID\n        Color | RGBA(0.885, 0.683, 0.000, 1.000)\n       
+      BlendMode | NORMAL\n    \u2014\u2014\u2014\u2014ArcData\n        StartingAngle
+      | 0\n        EndingAngle | 6.283185\n        InnerRadius | 0\n    \u2014\u2014\u2014\u2014Frame
+      59/\u043C\u043E\u043D\u0435\u0442\u044B \u0433\u0440\u0443\u043F\u043F\u0430/\u0438\u043A\u043E\u043D\u043A\u0430_\u043C\u043E\u043D\u0435\u0442\u043A\u0430/Ellipse
+      6\n        isVisible | True\n        Type | ELLIPSE\n        GetFigmaRotationAngle
+      | 0\n        FillGeometry | -981034844\n        StrokeWeight | 1\n        StrokeAlign
+      | INSIDE\n        BlendMode | PASS_THROUGH\n        Size | (40.91, 40.91)\n       
+      isVisible | True\n        Type | ELLIPSE\n        GetFigmaRotationAngle | 0\n       
+      FillGeometry | -981034844\n        StrokeWeight | 1\n        StrokeAlign |
+      INSIDE\n        BlendMode | PASS_THROUGH\n        Size | (40.91, 40.91)\n       
+      \u2014\u2014\u2014\u2014Fills\n            IsVisible | True\n            Type
+      | SOLID\n            Color | RGBA(1.000, 0.809, 0.165, 1.000)\n           
+      BlendMode | NORMAL\n        \u2014\u2014\u2014\u2014ArcData\n            StartingAngle
+      | 0\n            EndingAngle | 6.283185\n            InnerRadius | 0\n       
+      \u2014\u2014\u2014\u2014Frame 59/\u043C\u043E\u043D\u0435\u0442\u044B \u0433\u0440\u0443\u043F\u043F\u0430/\u0438\u043A\u043E\u043D\u043A\u0430_\u043C\u043E\u043D\u0435\u0442\u043A\u0430/Ellipse
+      7\n            isVisible | True\n            Type | ELLIPSE\n            GetFigmaRotationAngle
+      | 0\n            FillGeometry | 572430809\n            StrokeWeight | 1\n           
+      StrokeAlign | INSIDE\n            BlendMode | PASS_THROUGH\n            Size
+      | (31.82, 31.82)\n            isVisible | True\n            Type | ELLIPSE\n           
+      GetFigmaRotationAngle | 0\n            FillGeometry | 572430809\n           
+      StrokeWeight | 1\n            StrokeAlign | INSIDE\n            BlendMode |
+      PASS_THROUGH\n            Size | (31.82, 31.82)\n            \u2014\u2014\u2014\u2014Fills\n               
+      IsVisible | True\n                Type | SOLID\n                Color | RGBA(1.000,
+      0.952, 0.532, 1.000)\n                BlendMode | NORMAL\n            \u2014\u2014\u2014\u2014ArcData\n               
+      StartingAngle | 0\n                EndingAngle | 6.283185\n               
+      InnerRadius | 0\n            \u2014\u2014\u2014\u2014Frame 59/\u043C\u043E\u043D\u0435\u0442\u044B
+      \u0433\u0440\u0443\u043F\u043F\u0430/\u0438\u043A\u043E\u043D\u043A\u0430_\u043C\u043E\u043D\u0435\u0442\u043A\u0430/Star
+      1\n                isVisible | True\n                Type | STAR\n               
+      GetFigmaRotationAngle | 0\n                FillGeometry | 586247835\n               
+      StrokeWeight | 1\n                StrokeAlign | INSIDE\n                BlendMode
+      | PASS_THROUGH\n                Size | (22.73, 22.73)\n                isVisible
+      | True\n                Type | STAR\n                GetFigmaRotationAngle
+      | 0\n                FillGeometry | 586247835\n                StrokeWeight
+      | 1\n                StrokeAlign | INSIDE\n                BlendMode | PASS_THROUGH\n               
+      Size | (22.73, 22.73)\n                \u2014\u2014\u2014\u2014Fills\n                   
+      IsVisible | True\n                    Type | SOLID\n                    Color
+      | RGBA(1.000, 0.809, 0.165, 1.000)\n                    BlendMode | NORMAL\n               
+      \u2014\u2014\u2014\u2014ArcData\n                    StartingAngle | 0\n                   
+      EndingAngle | 0\n                    InnerRadius | 0\n"
+    parentIndex: 6
+    hierarchy: "Frame 59/\u043C\u043E\u043D\u0435\u0442\u044B \u0433\u0440\u0443\u043F\u043F\u0430/\u0438\u043A\u043E\u043D\u043A\u0430_\u043C\u043E\u043D\u0435\u0442\u043A\u0430"
+    spritePath: 
+    link: 
+    humanizedTextPrefabName: 
+    tagReason: SingleImage
+    downloadAttempsCount: 0
+    isDownloadable: 0
+    isDuplicate: 1
+    isMutual: 1
+    isEmptyMask: 0
+    isEmpty: 0
+    needDownload: 0
     needGenerate: 0
     forceImage: 1
     forceContainer: 0
@@ -4218,3 +6720,4 @@ SceneRoots:
   - {fileID: 1970869432}
   - {fileID: 105844143}
   - {fileID: 2127640758}
+  - {fileID: 219700587}

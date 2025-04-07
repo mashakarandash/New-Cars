@@ -22,7 +22,7 @@ public class Spawner : MonoBehaviour
 
     [HideInInspector] public float PublicField = 100; // убирает публичные поля внутри инспектора
 
-    private bool _gameIsActive = true;
+    private bool _gameIsActive = false;
     private EventBus _eventBus;
 
     public DirectionToMove Directions;
@@ -39,7 +39,7 @@ public class Spawner : MonoBehaviour
     private void Start()
     {
         
-        StartCoroutine(Waiting());
+        //StartCoroutine(Waiting());
         _eventBus.StopGameAction += StopGame;
         _eventBus.RestartGameAction += RestartGame;
     }
@@ -116,10 +116,12 @@ public class Spawner : MonoBehaviour
     private void StopGame()
     {
         _gameIsActive = false;
+        _carPool.DestroyCars();
     }
 
     private void RestartGame()
     {
+        
         _gameIsActive = true;
         StartCoroutine(Waiting());
     }

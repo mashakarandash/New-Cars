@@ -30,6 +30,7 @@ public class RainbowCar : Vehicle
     {
         if (IsTemporaryYellowCar)
         {
+            base.OnMouseDown();
             _eventBus.ScoreChanged.Invoke();
             gameObject.SetActive(false);
             return;
@@ -37,10 +38,12 @@ public class RainbowCar : Vehicle
 
         if (_renderer.material.color == Color.yellow)
         {
+            PlayTapAudio(_yellowCarTapAudio);
             _eventBus.ScoreChanged.Invoke();
         }
         else
         {
+            PlayTapAudio(_anotherCarTapAudio);
             _eventBus.MinusLifeAction.Invoke();
         }
         gameObject.SetActive(false);

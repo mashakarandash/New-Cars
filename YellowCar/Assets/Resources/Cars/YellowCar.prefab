@@ -15066,10 +15066,13 @@ MonoBehaviour:
   Index: 0
   GreenLightDetected: 1
   IsStilledByUFO: 0
+  CanPlayTapAudio: 1
   NavMeshAgent: {fileID: 3791685304185144600}
   _distanceBetweenCar: 1
   _collisionParticle: {fileID: 7817896396572006480}
   _meshRenderer: {fileID: 3275811866849393289}
+  _yellowCarTapAudio: {fileID: 8300000, guid: 5e9ff3a8736484cd88125458f59c0aaf, type: 3}
+  _anotherCarTapAudio: {fileID: 8300000, guid: 5e9ff3a8736484cd88125458f59c0aaf, type: 3}
 --- !u!195 &3791685304185144600
 NavMeshAgent:
   m_ObjectHideFlags: 0

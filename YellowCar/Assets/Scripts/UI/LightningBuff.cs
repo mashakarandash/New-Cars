@@ -10,12 +10,13 @@ public class LightningBuff : BuffButton
     {
         base.ActivateBuff();
 
-        foreach (var yellowCar in _carPool.YellowCarPool.GetAllCars())
+        foreach (Vehicle yellowCar in _carPool.YellowCarPool.GetAllCars())
         {
             if (yellowCar.gameObject.activeSelf)
             {
-               yellowCar.OnMouseDown();
-
+                yellowCar.CanPlayTapAudio = false;
+                yellowCar.OnMouseDown();
+                yellowCar.CanPlayTapAudio = true;
             }
         }
     }

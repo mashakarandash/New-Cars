@@ -6,7 +6,7 @@ using Zenject;
 public class YellowCarBehavior : Vehicle
 {
     private EventBus _eventBus;
-    private int Sobaka;
+    
 
     [Inject]
     private void Constract(EventBus eventBus)
@@ -16,12 +16,7 @@ public class YellowCarBehavior : Vehicle
 
     public override void OnMouseDown() //засчитываем очки в этом методе
     {
-        /* Sobaka++;
-         Debug.Log("нажатие" + Sobaka);
-         _eventBus.ScoreChanged.Invoke();
-         gameObject.SetActive(false);*/
-
-        Sobaka++;
+        base.OnMouseDown();
         _eventBus.ScoreChanged.Invoke();
         gameObject.SetActive(false);
     }

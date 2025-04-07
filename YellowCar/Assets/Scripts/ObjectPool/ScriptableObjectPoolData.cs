@@ -46,7 +46,7 @@ public class ScriptableObjectPoolData : ScriptableObject
 
     }
 
-    public void RemoveAllCar()
+    public void RemoveAllCarFromPolice()
     {
         YellowCarPool.ReturnAllCarToPool();
         RedCarPool.ReturnAllCarToPool();
