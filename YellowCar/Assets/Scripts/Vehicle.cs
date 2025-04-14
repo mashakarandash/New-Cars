@@ -29,7 +29,6 @@ public abstract class Vehicle : MonoBehaviour
     [SerializeField] private float _distanceBetweenCar;
     [SerializeField] private ParticleSystem _collisionParticle;
     [SerializeField] private MeshRenderer _meshRenderer;
-
     [SerializeField] protected AudioClip _yellowCarTapAudio;
     [SerializeField] protected AudioClip _anotherCarTapAudio;
 
@@ -97,6 +96,7 @@ public abstract class Vehicle : MonoBehaviour
     public void TeleportTonewPosition(Vector3 position)
     {
         NavMeshAgent.Warp(position);
+        Debug.Log(NavMeshAgent.isOnNavMesh);
     }
 
     public virtual void DoDestroy()

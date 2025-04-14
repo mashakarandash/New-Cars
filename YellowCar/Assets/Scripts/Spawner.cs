@@ -129,6 +129,7 @@ public class Spawner : MonoBehaviour
     private void DoCarSetting(GameObject car) //передаем в метод игровой объект какой-то машинки, чтобы далее настроить ей скорость и местоположение (полосу)
     {
         int speed = Random.Range(_minSpeed, _maxSpeed); // скорости каждой машинки, диапазон
+        Debug.Log(speed);
         car.TryGetComponent(out Vehicle vehicle);
         if (_traficLight!= null)
         {

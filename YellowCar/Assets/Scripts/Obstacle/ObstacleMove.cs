@@ -12,6 +12,10 @@ public class ObstacleMove : MonoBehaviour
     {
         objectToMove.position = _startPoint.position;
         objectToMove.DOMove(_finishPoint.position, timeToFinishMovement).OnComplete(() => objectToMove.gameObject.SetActive(false));
-    }
+        Vector3 direction = _finishPoint.position - _startPoint.position;
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        Debug.Log(angle);
+        objectToMove.rotation = Quaternion.LookRotation(direction);
 
+    }
 }
