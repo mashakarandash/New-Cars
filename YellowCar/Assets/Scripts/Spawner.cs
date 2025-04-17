@@ -42,9 +42,13 @@ public class Spawner : MonoBehaviour
         //StartCoroutine(Waiting());
         _eventBus.StopGameAction += StopGame;
         _eventBus.RestartGameAction += RestartGame;
+        _eventBus.NoCreateTaxiAction += NoCreateTaxi;
     }
 
-   
+    private void NoCreateTaxi()
+    {
+        CanCreateTaxiCar = false;
+    }
 
     private void CreateCar()
     {

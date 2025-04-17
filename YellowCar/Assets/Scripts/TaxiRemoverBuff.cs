@@ -6,7 +6,7 @@ using Zenject;
 
 public class TaxiRemoverBuff : BuffButton
 {
-    [SerializeField] private List<Spawner> _spawners;
+   
     [SerializeField] private GameObject _buttonTaxi;
     [SerializeField] private ScriptableObjectPoolData _allCars;
 
@@ -28,11 +28,8 @@ public class TaxiRemoverBuff : BuffButton
         
         base.ActivateBuff();
         _allCars.TaxiCarPool.ReturnCars();
-        foreach (var spawner in _spawners)
-        {
-            spawner.CanCreateTaxiCar = false;
-
-        }
+        _eventBus.NoCreateTaxiAction.Invoke();
+        
         
         _eventBus.RestartGameAction += ActivateButton;
         _buttonTaxi.SetActive(false);

@@ -15,10 +15,12 @@ public class EventBus
     public Action ScoreCheck;
     public Action DoubleScore;
     public Action OnRestartTimer;
+    public Action NoCreateTaxiAction;
 
     public Action<int> OnTimerCount;
     public Action<int> ShowGainMoney;
     public Action<int> ShowGainStars;
+
 }
 
     

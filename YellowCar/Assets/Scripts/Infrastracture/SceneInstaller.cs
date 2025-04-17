@@ -9,6 +9,7 @@ public class SceneInstaller : MonoInstaller
     [SerializeField] private ScriptableObjectPoolData _carPoolData;
     [SerializeField] private CointsChanger _coinsChanger;
     [SerializeField] private AudioSource _audioEffects;
+    [SerializeField] private GameStarter _gameStarter;
 
     public override void InstallBindings()
     {
@@ -16,6 +17,9 @@ public class SceneInstaller : MonoInstaller
         BindScriptableObjectPoolData();
         BindCoinsChanger();
         BindAudioEffects();
+        BindGameStarter();
+        GameObject canvas = Container.InstantiatePrefabResource("Prefabs/Canvas");
+        Container.QueueForInject(canvas);
     }
 
     public override void Start()
@@ -58,6 +62,15 @@ public class SceneInstaller : MonoInstaller
             .WithId("Effects")
              .FromInstance(_audioEffects)
              .AsCached()
+             .NonLazy();
+    }
+
+    private void BindGameStarter()
+    {
+        Container
+             .Bind<GameStarter>()
+             .FromInstance(_gameStarter)
+             .AsSingle()
              .NonLazy();
     }
 }
