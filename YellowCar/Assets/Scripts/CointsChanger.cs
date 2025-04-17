@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 using Zenject;
 
 public class CointsChanger : MonoBehaviour
@@ -23,7 +24,9 @@ public class CointsChanger : MonoBehaviour
     void Start()
     {
         
-        _text.text = $"Очки: {Score} / {_levelGoal.ScoreToGrow}";
+        _text.text = $"{Score} / {_levelGoal.ScoreToGrow}";
+        Canvas.ForceUpdateCanvases();
+        LayoutRebuilder.ForceRebuildLayoutImmediate(transform.parent.GetComponent<RectTransform>());
         _eventBus.ScoreChanged += ChangeScore;// таким образом мы подписываемся на события ScoreChanged, которые находятся в классе EventBus
         _eventBus.RestartGameAction += NullCoins;
         _eventBus.DoubleScore += DoubleScore;
@@ -41,14 +44,14 @@ public class CointsChanger : MonoBehaviour
         {
             Score++;
         }
-        _text.text = $"Очки: {Score} / {_levelGoal.ScoreToGrow}";
+        _text.text = $"{Score} / {_levelGoal.ScoreToGrow}";
         _eventBus.ScoreCheck.Invoke();
     }
 
     private void NullCoins()
     {
         Score = 0;
-        _text.text = $"Очки: {Score}";
+        _text.text = $"{Score} / {_levelGoal.ScoreToGrow}";
     }
 
     private void DoubleScore()

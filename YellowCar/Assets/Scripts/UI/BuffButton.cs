@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Zenject;
 
 public abstract class BuffButton : MonoBehaviour
 {
@@ -11,11 +12,18 @@ public abstract class BuffButton : MonoBehaviour
     [SerializeField] protected Button Button;
 
     protected bool CanActivateBuff;
+    private EventBus _eventBus;
+
+    [Inject]
+    private void Constract(EventBus eventBus)
+    {
+        _eventBus = eventBus;
+    }
 
     private void Start()
     {
         Button.onClick.AddListener(ActivateBuff);
-        StartCoroutine(TimerWorkCoroutine());
+        _eventBus.RestartGameAction+=()=> StartCoroutine(TimerWorkCoroutine());
     }
 
     private IEnumerator TimerWorkCoroutine()

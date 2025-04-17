@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 using Zenject;
 
 public class EndGameReward : MonoBehaviour
@@ -17,7 +18,7 @@ public class EndGameReward : MonoBehaviour
     [SerializeField] private TextMeshProUGUI _stopWatchText;
 
     private float _stopWatch;
-    private bool _isGameActive = true;
+    private bool _isGameActive = false;
     private EventBus _eventBus;
     private int _rewardModificator = 1;
 
@@ -32,6 +33,9 @@ public class EndGameReward : MonoBehaviour
 
     void Start()
     {
+        _stopWatchText.text = $"{_stopWatch.ToString("F0")} / {_bestTime}";
+        Canvas.ForceUpdateCanvases();
+        LayoutRebuilder.ForceRebuildLayoutImmediate(_stopWatchText.transform.parent.GetComponent<RectTransform>());
         _eventBus.StopGameAction += RewardPlayer;
         _eventBus.ShowGainMoney += SaveMoney;
         _eventBus.RestartGameAction += () =>
@@ -93,7 +97,7 @@ public class EndGameReward : MonoBehaviour
         if (_isGameActive == true)
         {
             _stopWatch += Time.deltaTime;
-            _stopWatchText.text = _stopWatch.ToString("F2");
+            _stopWatchText.text = $"{_stopWatch.ToString("F0")} / {_bestTime}";
         }
         
     }
