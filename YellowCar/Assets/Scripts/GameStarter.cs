@@ -9,10 +9,9 @@ public class GameStarter : MonoBehaviour
 {
     [SerializeField] private CinemachineVirtualCamera _firstCam;
     [SerializeField] private CinemachineVirtualCamera _secondCam;
-    [SerializeField] private GameObject _startButton;
-    [SerializeField] private Transform _vanishPosition;
+    
     [SerializeField] private float _vanishAnimationSpeed;
-    [SerializeField] private Transform _uIYellCarAnimation;
+   
 
     private EventBus _eventBus;
 
@@ -22,17 +21,12 @@ public class GameStarter : MonoBehaviour
         _eventBus = eventBus;
     }
 
-    private void Start()
-    {
-        _uIYellCarAnimation.DORotate(new Vector3(0, 0, 360), 4, RotateMode.FastBeyond360).SetEase(Ease.Linear).SetLoops(-1);
-    }
-
-    public void StartGame()
+    public void StartGame(GameObject startButton, Transform vanishPosition)
     {
         _eventBus.RestartGameAction.Invoke();
         
         _secondCam.Priority = 15;
-        _startButton.transform.DOMoveY(_vanishPosition.position.y, _vanishAnimationSpeed).SetEase(Ease.InOutSine);
+        startButton.transform.DOMoveY(vanishPosition.position.y, _vanishAnimationSpeed).SetEase(Ease.InOutSine);
     }
 
     

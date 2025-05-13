@@ -12,4 +12,13 @@ public class Storage
     public List<LevelData> LevelsInformation = new List<LevelData>();
     public int CurrentLevelID;
     internal int NextSceneToUnlock;
+    public void InitializeStorage(SaveData saveData)
+    {
+        Money.Value = saveData.Money;
+        LightningBonusCount.Value = saveData.LightBuffCount;
+        FreezeBonusCount.Value = saveData.FreezeBuffCount;
+        TaxiBonusCount.Value = saveData.TaxiBuffCount;
+        CurrentLevelID = saveData.LastPastLevel;
+        NextSceneToUnlock = CurrentLevelID + 1;
+    }
 }

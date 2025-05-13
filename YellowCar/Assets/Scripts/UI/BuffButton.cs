@@ -1,33 +1,44 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using Zenject;
 
 public abstract class BuffButton : MonoBehaviour
 {
-    [SerializeField] private Image _timer;
     [SerializeField] private int _coolDown;
 
+    [SerializeField] protected Image Timer;
+    [SerializeField] protected Image Image;
+    [SerializeField] protected TextMeshProUGUI ValueText;
     [SerializeField] protected Button Button;
 
-    protected bool CanActivateBuff;
     private EventBus _eventBus;
+    private bool _isBlocked = false;
+
+    protected bool CanActivateBuff;
+    protected MasterSave MasterSave;
+    protected event Action OnBuffActivated;
 
     [Inject]
-    private void Constract(EventBus eventBus)
+    private void Constract(EventBus eventBus, MasterSave masterSave)
     {
         _eventBus = eventBus;
+        MasterSave = masterSave;
     }
 
-    private void Start()
+    protected virtual void Start()
     {
         Button.onClick.AddListener(ActivateBuff);
         _eventBus.RestartGameAction+=()=> StartCoroutine(TimerWorkCoroutine());
+        
     }
 
     private IEnumerator TimerWorkCoroutine()
     {
+        Debug.Log("тдет перезаряд");
         float clockWise = 0;
         //CanActivateBuff = false;
 
@@ -35,22 +46,31 @@ public abstract class BuffButton : MonoBehaviour
         {
             clockWise += Time.deltaTime;
             float procent = clockWise / _coolDown;
-            _timer.fillAmount = procent;
+            Timer.fillAmount = procent;
 
             yield return null;
         }
         CanActivateBuff = true;
     }
 
-    public virtual void ActivateBuff()
+    private void ActivateBuff()
     {
-        if (CanActivateBuff == false)
+        if (CanActivateBuff == false || _isBlocked == true)
         {
             return;
         }
 
+       // MasterSave.SaveAllData();
         CanActivateBuff = false;
+        OnBuffActivated.Invoke();
         StartCoroutine(TimerWorkCoroutine());
+    }
+
+    protected void BlockingButton()
+    {
+        Image.color = Color.gray;
+        Timer.enabled = false;
+        _isBlocked = true;
     }
 
 }

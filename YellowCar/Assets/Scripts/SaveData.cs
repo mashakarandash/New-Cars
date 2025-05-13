@@ -1,14 +1,86 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
+using Newtonsoft.Json;
 
+[Serializable]
 public class SaveData
 {
-    public int Money;
-    public int LightBuffCount;
-    public int FreezeBuffCount;
-    public int TaxiBuffCount;
+    private int _money;
+    private int _lightBuffCount;
+    private int _freezeBuffCount;
+    private int _taxiBuffCount;
+
+
+    #region FEATURES
+
+    public int Money
+    {
+        get => _money;
+        set
+        {
+            if (value <= 0)
+            {
+                _money = 0;
+            }
+            else
+            {
+                _money = value;
+            }
+        }
+    }
+
+    public int LightBuffCount
+    {
+        get => _lightBuffCount;
+        set
+        {
+            if (value <= 0)
+            {
+                _lightBuffCount = 0;
+            }
+            else
+            {
+                _lightBuffCount = value;
+            }
+        }
+    }
+
+    public int FreezeBuffCount
+    {
+        get => _freezeBuffCount;
+        set
+        {
+            if (value <= 0)
+            {
+                _freezeBuffCount = 0;
+            }
+            else
+            {
+                _freezeBuffCount = value;
+            }
+        }
+    }
+
+    public int TaxiBuffCount
+    {
+        get => _taxiBuffCount;
+        set
+        {
+            if (value <= 0)
+            {
+                _taxiBuffCount = 0;
+            }
+            else
+            {
+                _taxiBuffCount = value;
+            }
+        }
+    }
+    #endregion
+
     public LevelData[] SavedLevelData;
-    
+    public int LastPastLevel;
 
     public void AddMoney(int moneyCount)
     {

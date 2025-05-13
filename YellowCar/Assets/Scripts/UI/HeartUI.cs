@@ -12,6 +12,7 @@ public class HeartUI : MonoBehaviour
     [SerializeField] private List<Image> _images;
     [SerializeField] private GameObject _gameOverPanel;
     [SerializeField] private TextMeshProUGUI _timerText;
+    [SerializeField]
     
     private int _lives = 3;
     private EventBus _eventBus;

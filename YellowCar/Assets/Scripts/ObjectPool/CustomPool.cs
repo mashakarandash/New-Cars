@@ -31,7 +31,6 @@ public class CustomPool<T> where T : MonoBehaviour // T - Generic verible, ун�
         _carPrefab = prefab;
         _carList = new List<T>();
         _container = container;
-        Debug.Log(_container + "существует");
         for (int i = 0; i < InitObjectCount; i++) //создаем машинку и засовываем ее в склад
         {
             CreateCar();

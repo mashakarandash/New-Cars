@@ -12,21 +12,21 @@ public class EndGameReward : MonoBehaviour
 
     [SerializeField] private HeartUI _heartUI;
     [SerializeField] private float _bestTime;
-    [SerializeField] private CointsChanger _coinsChanger;
+    [SerializeField] private TextMeshProUGUI _stopWatchText;
+    
     private Storage _storage;
     private MasterSave _masterSave;
-    [SerializeField] private TextMeshProUGUI _stopWatchText;
-
     private float _stopWatch;
     private bool _isGameActive = false;
     private EventBus _eventBus;
+    private ScoreHolder _scoreHolder;
     private int _rewardModificator = 1;
 
     [Inject]
-    private void Constract(EventBus eventBus, CointsChanger cointsChanger, Storage storage, MasterSave masterSave)
+    private void Constract(EventBus eventBus, ScoreHolder scoreHolder, Storage storage, MasterSave masterSave)
     {
         _eventBus = eventBus;
-        _coinsChanger = cointsChanger;
+        _scoreHolder = scoreHolder;
         _storage = storage;
         _masterSave = masterSave;
     }
@@ -71,13 +71,13 @@ public class EndGameReward : MonoBehaviour
         switch (_rewardModificator)
         {
             case 1:
-                _eventBus.ShowGainMoney?.Invoke(_coinsChanger.Score);
+                _eventBus.ShowGainMoney?.Invoke(_scoreHolder.Score);
                 break;
             case 2:
-                _eventBus.ShowGainMoney?.Invoke(Mathf.RoundToInt(_coinsChanger.Score * 1.5f));
+                _eventBus.ShowGainMoney?.Invoke(Mathf.RoundToInt(_scoreHolder.Score * 1.5f));
                 break;
             case 3:
-                _eventBus.ShowGainMoney?.Invoke(Mathf.RoundToInt(_coinsChanger.Score * 2));
+                _eventBus.ShowGainMoney?.Invoke(Mathf.RoundToInt(_scoreHolder.Score * 2));
                 break;
                 
         }

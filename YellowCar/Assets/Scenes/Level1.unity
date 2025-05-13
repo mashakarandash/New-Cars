@@ -1169,11 +1169,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 125891e0eec094b8c90ff8cc2183f80f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _levelGoal: {fileID: 0}
+  _scoreToGrow: 10
   _carPoolData: {fileID: 11400000, guid: 613496a10c7804765850885ad184832c, type: 2}
-  _coinsChanger: {fileID: 0}
   _audioEffects: {fileID: 1463818806}
-  _gameStarter: {fileID: 0}
+  _gameStarter: {fileID: 1389943470}
 --- !u!4 &78343114
 Transform:
   m_ObjectHideFlags: 0
@@ -13035,10 +13034,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _firstCam: {fileID: 173688462}
   _secondCam: {fileID: 1375763511}
-  _startButton: {fileID: 0}
-  _vanishPosition: {fileID: 0}
   _vanishAnimationSpeed: 2
-  _uIYellCarAnimation: {fileID: 0}
 --- !u!4 &1389943471
 Transform:
   m_ObjectHideFlags: 0

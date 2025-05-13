@@ -96,7 +96,6 @@ public abstract class Vehicle : MonoBehaviour
     public void TeleportTonewPosition(Vector3 position)
     {
         NavMeshAgent.Warp(position);
-        Debug.Log(NavMeshAgent.isOnNavMesh);
     }
 
     public virtual void DoDestroy()
