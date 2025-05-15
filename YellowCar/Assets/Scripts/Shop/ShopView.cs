@@ -18,6 +18,15 @@ public class ShopView : MonoBehaviour
         _masterSave = masterSave;
     }
 
+    /* private void OnEnable()
+     {
+         _moneyText.text =  "";
+     }*/
+    private void Awake()
+    {
+        gameObject.SetActive(false);
+    }
+
     private void Start()
     {
         _storage.Money.OnChange += x => _moneyText.text = x.ToString();
@@ -30,6 +39,11 @@ public class ShopView : MonoBehaviour
         _lightningCountBonusText.text = _storage.FreezeBonusCount.Value.ToString();
         _taxiCountBonusText.text = _storage.TaxiBonusCount.Value.ToString();*/
     }
+    public void SaveAllData()
+    {
+        _masterSave.SaveAllData();
+    }
+
     private void OnDisable()
     {
         Debug.Log("покупки сохранены");
@@ -38,7 +52,7 @@ public class ShopView : MonoBehaviour
         _storage.LightningBonusCount.RemoveAllListeners();
         _storage.TaxiBonusCount.RemoveAllListeners();
 
-        _masterSave.SaveAllData();
+        //_masterSave.SaveAllData();
     }
 
    
