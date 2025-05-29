@@ -16,6 +16,7 @@ public class CrowSpawner : MonoBehaviour
     [SerializeField] private int _timeToFly;
     [SerializeField] private int _scaleCrow;
     [SerializeField] private int _vanish;
+    [SerializeField] private Image _crowCrashed;
 
     private EventBus _eventBus;
     private bool _gameIsActive = true;
@@ -56,16 +57,21 @@ public class CrowSpawner : MonoBehaviour
             {
                 continue;
             }
+            _crow.gameObject.SetActive(true);
+            _crow.position = _startMovement.position;
             Tween animationInfo;
-            animationInfo = _crow.DOMove(_endMovement.position, _timeToFly).From(_startMovement.position);
-            _crow.DOScale(_scaleCrow, _timeToFly).SetEase(Ease.Linear);
+           
+            animationInfo = _crow.DOMove(_endMovement.position, _timeToFly).From(_startMovement.position).SetEase(Ease.Linear);
+          //  _crow.DOScale(_scaleCrow, _timeToFly).SetEase(Ease.Linear);
             yield return animationInfo.WaitForCompletion();
-            animationInfo = _crow.DOScale(15f, 0.25f);
+            _crowCrashed.enabled = true;
+            _crow.gameObject.SetActive(false);
+           
+           
+            animationInfo = _crowCrashed.DOFade(0, _vanish);
             yield return animationInfo.WaitForCompletion();
-            animationInfo = _crow.GetComponent<Image>().DOFade(0, _vanish);
-            yield return animationInfo.WaitForCompletion();
-            _crow.GetComponent<Image>().DOFade(1, 0);
-            _crow.DOScale(1, 0);
+            _crowCrashed.DOFade(1, 0);
+            _crowCrashed.enabled = false;
 
 
             _crow.transform.position = _startMovement.position;

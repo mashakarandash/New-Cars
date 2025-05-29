@@ -6,7 +6,8 @@ using UnityEngine.AI;
 
 public class TraficLight : MonoBehaviour
 {
-    [SerializeField] private MeshRenderer  _meshRenderer;
+    [SerializeField] private MeshRenderer  _meshRendererRed;
+    [SerializeField] private MeshRenderer _meshRendererGreen;
     [SerializeField] private int _greenTimer, _redTimer;
     [SerializeField] private bool _isTimeToGreenLight;
     [SerializeField] private List <Spawner> _spawner;
@@ -16,6 +17,7 @@ public class TraficLight : MonoBehaviour
     public event Action<bool> GreenLightEvent;
     public Transform testObstacle;
     public ObstacleMove testMover;
+    
 
 
 
@@ -33,7 +35,8 @@ public class TraficLight : MonoBehaviour
 
     private IEnumerator GreenLightCoroutine()
     {
-        _meshRenderer.material.color = Color.green;
+        _meshRendererRed.material.color = Color.black;
+        _meshRendererGreen.material.color = Color.green;
         _isTimeToGreenLight = true;
         GreenLightEvent?.Invoke(true);
         foreach (var spawner in _spawner)
@@ -54,7 +57,8 @@ public class TraficLight : MonoBehaviour
             testMover.StartMoveObctacle(testObstacle, 5);
         }
 
-        _meshRenderer.material.color = Color.red;
+        _meshRendererRed.material.color = Color.red;
+        _meshRendererGreen.material.color = Color.black;
         _isTimeToGreenLight = false;
         GreenLightEvent?.Invoke(false);
         foreach (var spawner in _spawner)

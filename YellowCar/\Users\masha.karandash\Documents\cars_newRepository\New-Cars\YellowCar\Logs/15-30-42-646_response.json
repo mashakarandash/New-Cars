@@ -1,0 +1,5 @@
+https://api.figma.com/v1/me
+{
+    "status": 403,
+    "err": "Token expired"
+}

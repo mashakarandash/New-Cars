@@ -10,6 +10,7 @@ public class SceneInstaller : MonoInstaller
    // [SerializeField] private CointsChanger _coinsChanger;
     [SerializeField] private AudioSource _audioEffects;
     [SerializeField] private GameStarter _gameStarter;
+    [SerializeField] private List<LightningPart> _lightnings;
 
     public override void InstallBindings()
     {
@@ -20,6 +21,12 @@ public class SceneInstaller : MonoInstaller
         //  BindCoinsChanger();
         BindAudioEffects();
         BindGameStarter();
+        Container
+            .Bind<List<LightningPart>>()
+            .FromInstance(_lightnings)
+            .AsSingle()
+            .NonLazy();
+
         GameObject canvas = Container.InstantiatePrefabResource("Prefabs/Canvas");
         Container.QueueForInject(canvas);
     }

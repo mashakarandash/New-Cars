@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using Zenject;
 
 public class PrintText : MonoBehaviour
 {
@@ -9,7 +10,14 @@ public class PrintText : MonoBehaviour
     [SerializeField] private string _textToWrite;
     [SerializeField] private float _delay;
     [SerializeField] private MainMenuAnimation _mainMenuPanel;
-    
+    private Storage _storage;
+
+    [Inject]
+    private void Constract(Storage storage)
+    {
+        _storage = storage;
+    }
+
     public IEnumerator Print()
     {
         for(int i = 0; i < _textToWrite.Length; i++)
@@ -18,13 +26,23 @@ public class PrintText : MonoBehaviour
             yield return new WaitForSeconds(_delay);
         }
         yield return new WaitForSeconds(2);
+
         gameObject.SetActive(false);
+        _storage.IsSigneShowed = true;
         _mainMenuPanel.ShowMenu();
     }
 
     private void Start()
     {
-        StartCoroutine(Print());
+        if (_storage.IsSigneShowed == false)
+        {
+            StartCoroutine(Print());
+        }
+        else
+        {
+            gameObject.SetActive(false);
+            _mainMenuPanel.ShowMenu();
+        }
     }
 
 }

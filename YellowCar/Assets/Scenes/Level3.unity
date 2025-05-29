@@ -12407,7 +12407,7 @@ Transform:
   m_GameObject: {fileID: 618246224}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.2000046, y: 0, z: -36.300007}
+  m_LocalPosition: {x: -1.2000046, y: -0, z: -36.300007}
   m_LocalScale: {x: 1, y: 1, z: 8.570036}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -12968,8 +12968,8 @@ Transform:
   m_GameObject: {fileID: 641862846}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 25.300005, y: 0, z: 4.375712}
-  m_LocalScale: {x: 0.13048548, y: 1, z: 6.06968}
+  m_LocalPosition: {x: 25.300005, y: 0, z: 4.39}
+  m_LocalScale: {x: 0.11751392, y: 1, z: 6.06968}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1605311118}
@@ -37681,6 +37681,7 @@ MonoBehaviour:
   _carPoolData: {fileID: 11400000, guid: 613496a10c7804765850885ad184832c, type: 2}
   _audioEffects: {fileID: 986388508}
   _gameStarter: {fileID: 55925306}
+  _lightnings: []
 --- !u!1 &2113368590
 GameObject:
   m_ObjectHideFlags: 0

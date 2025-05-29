@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using Zenject;
 
 public class UFO : MonoBehaviour
 {
@@ -12,12 +13,24 @@ public class UFO : MonoBehaviour
     [SerializeField] private int _timeToFlyForStill;
 
     private bool _canStill;
+    private bool _isGameActive;
     private Tween _ufoMovingAnimation;
+    private EventBus _eventBus;
+
+
+    [Inject]
+    private void Constract(EventBus eventBus)
+    {
+        _eventBus = eventBus;
+        _eventBus.RestartGameAction += () => _isGameActive = true;
+        _eventBus.StopGameAction += () => _isGameActive = false;
+    }
 
     private IEnumerator Start()
     {
         while (true)
         {
+            yield return new WaitWhile(() => _isGameActive = false);
             yield return new WaitForSeconds(_timeToApperance);
             _ufoMovingAnimation = transform.DOMove(_positionForStill.position, _timeToFlyForStill).SetEase(Ease.Linear).SetAutoKill(false);
             yield return _ufoMovingAnimation.WaitForCompletion();

@@ -11,6 +11,7 @@ public class Storage
 
     public List<LevelData> LevelsInformation = new List<LevelData>();
     public int CurrentLevelID;
+    public bool IsSigneShowed;
     internal int NextSceneToUnlock;
     public void InitializeStorage(SaveData saveData)
     {

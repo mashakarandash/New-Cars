@@ -2004,9 +2004,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 125891e0eec094b8c90ff8cc2183f80f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _levelGoal: {fileID: 86789846}
+  _scoreToGrow: 0
   _carPoolData: {fileID: 11400000, guid: 613496a10c7804765850885ad184832c, type: 2}
-  _coinsChanger: {fileID: 2086838042}
+  _audioEffects: {fileID: 0}
+  _gameStarter: {fileID: 0}
+  _lightnings: []
 --- !u!4 &852391155
 Transform:
   m_ObjectHideFlags: 0
@@ -2079,6 +2081,7 @@ MonoBehaviour:
   - {fileID: 310265399}
   _gameOverPanel: {fileID: 1305738788}
   _timerText: {fileID: 7206755}
+  _lives: 3
 --- !u!1 &862869170
 GameObject:
   m_ObjectHideFlags: 0
@@ -4020,7 +4023,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05459a9ed9867450286fc1fbe68613a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _meshRenderer: {fileID: 1038160009}
+  _meshRendererRed: {fileID: 0}
+  _meshRendererGreen: {fileID: 0}
   _greenTimer: 10
   _redTimer: 10
   _isTimeToGreenLight: 1
@@ -4526,7 +4530,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05459a9ed9867450286fc1fbe68613a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _meshRenderer: {fileID: 424028308}
+  _meshRendererRed: {fileID: 0}
+  _meshRendererGreen: {fileID: 0}
   _greenTimer: 7
   _redTimer: 7
   _isTimeToGreenLight: 0
@@ -4707,7 +4712,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _text: {fileID: 2086838043}
   _doubleScoreBonusDuration: 15
-  Score: 0
+  _winMenu: {fileID: 0}
+  _vanishAnimationSpeed: 0
+  _vanishPosition: {fileID: 0}
 --- !u!114 &2086838043
 MonoBehaviour:
   m_ObjectHideFlags: 0

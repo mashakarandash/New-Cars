@@ -15,6 +15,10 @@ public class VoitingMan : MonoBehaviour
     [SerializeField] private int _maxTimeToExist;
     [SerializeField] private float _timeToWalk;
     [SerializeField] private bool _canInteract;
+    [SerializeField] private Animator _animator;
+
+    private int _isWalk = Animator.StringToHash("IsWalk");
+    
     
 
     private bool _isCarsConverted;
@@ -66,15 +70,20 @@ public class VoitingMan : MonoBehaviour
         {
             int randomNumber = UnityEngine.Random.Range(_minTimeToExist, _maxTimeToExist);
             yield return new WaitForSeconds(randomNumber);
-            transform.DOScale(1, 0);
+            transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles.x, transform.rotation.eulerAngles.y - 180, transform.rotation.eulerAngles.z);
+            transform.DOScale(1.3f, 0);
             Tween tween = transform.DOMove(_finish.position, _timeToWalk).From(_start.position);
+            _animator.SetBool(_isWalk, true);
             yield return tween.WaitForCompletion();
+            _animator.SetBool(_isWalk, false);
             _canInteract = true;
             yield return new WaitForSeconds(_waitingTime);
 
             if (transform.localScale != Vector3.zero)
             {
+                transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles.x, transform.rotation.eulerAngles.y - 180, transform.rotation.eulerAngles.z);
                 _canInteract = false;
+                _animator.SetBool(_isWalk, true);
                 transform.DOMove(_start.position, _timeToWalk).From(_finish.position).OnComplete(() => gameObject.SetActive(false));
             }
         }

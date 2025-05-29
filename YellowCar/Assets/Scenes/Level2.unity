@@ -13414,6 +13414,7 @@ MonoBehaviour:
   _carPoolData: {fileID: 11400000, guid: 613496a10c7804765850885ad184832c, type: 2}
   _audioEffects: {fileID: 1790064792}
   _gameStarter: {fileID: 434193534}
+  _lightnings: []
 --- !u!4 &1691377327
 Transform:
   m_ObjectHideFlags: 0
