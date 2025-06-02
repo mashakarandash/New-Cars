@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
+using DG.Tweening;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class FreezingBuff : BuffButton
 {
     [SerializeField] private ScriptableObjectPoolData _allCars;
     [SerializeField] private float _buffDuration;
     [SerializeField] private int _freezingSpeed;
+    [SerializeField] private Image _freezingImage;
 
     protected override void Start()
     {
@@ -37,8 +40,11 @@ public class FreezingBuff : BuffButton
             car.SaveSpeed = car.Speed;
             car.NavMeshAgent.speed = _freezingSpeed;
         }
+        Tween tween = _freezingImage.DOFade(1, 2);
+
        // Debug.Log(_buffDuration + "анчало фриза");
         yield return new WaitForSeconds(_buffDuration);
+        _freezingImage.DOFade(0, 1);
        // Debug.Log(_buffDuration + "rонец фриза");
         foreach (var car in _allCars.AllCars)
         {
