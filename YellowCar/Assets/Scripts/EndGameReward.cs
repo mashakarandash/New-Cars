@@ -22,13 +22,16 @@ public class EndGameReward : MonoBehaviour
     private ScoreHolder _scoreHolder;
     private int _rewardModificator = 1;
 
+   
+
     [Inject]
-    private void Constract(EventBus eventBus, ScoreHolder scoreHolder, Storage storage, MasterSave masterSave)
+    private void Constract(EventBus eventBus, ScoreHolder scoreHolder, Storage storage, MasterSave masterSave, [Inject(Id ="BestTime")] int bestTime)
     {
         _eventBus = eventBus;
         _scoreHolder = scoreHolder;
         _storage = storage;
         _masterSave = masterSave;
+        _bestTime = bestTime;
     }
 
     void Start()
@@ -45,11 +48,16 @@ public class EndGameReward : MonoBehaviour
         };
     }
 
+    public void ChangeBestTime(int bestTime)
+    {
+        _bestTime = bestTime;
+    }
+
     private void SaveMoney(int moneyCount)
     {
         _storage.Money.Value += moneyCount;
         _masterSave.SaveData.AddMoney(moneyCount);
-        _masterSave.SaveAllData();
+        
     }
 
     private void RewardPlayer()
@@ -86,6 +94,11 @@ public class EndGameReward : MonoBehaviour
         //levelData.StarsInLevel = _rewardModificator;
         //_storage.NextSceneToUnlock = _storage.CurrentLevelID +1;
         //_masterSave.SaveData.SaveNewLevel(levelData);
+        if (_rewardModificator > 3)
+        {
+            _rewardModificator = 3;
+        }
+
         _eventBus.ShowGainStars.Invoke(_rewardModificator);
         _rewardModificator = 1;
 

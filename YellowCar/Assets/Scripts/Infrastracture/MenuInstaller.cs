@@ -12,9 +12,16 @@ public class MenuInstaller : MonoInstaller
     [SerializeField] private List<Sprite> _carModel;
     [SerializeField] private List<int> _carsCost;
 
+    private Storage _storage;
+
     public override void InstallBindings()
     {
         
+    }
+
+    public void OnDestroy()
+    {
+        _storage.Money.RemoveAllListeners();
     }
 
     public override void Start() 
@@ -22,6 +29,7 @@ public class MenuInstaller : MonoInstaller
         MasterSave master = Container.Resolve<MasterSave>();
         master.LoadAllData();
         Storage storage = Container.Resolve<Storage>();
+        _storage = storage;
         storage.InitializeStorage(master.SaveData);
 
 

@@ -247,12 +247,14 @@ MonoBehaviour:
   GreenLightDetected: 1
   IsStilledByUFO: 0
   CanPlayTapAudio: 1
+  PrefabVariant1: {fileID: 0}
+  PrefabVariant2: {fileID: 0}
   NavMeshAgent: {fileID: -4256086042514446799}
   _distanceBetweenCar: 1
   _collisionParticle: {fileID: 6167921495509305672}
   _meshRenderer: {fileID: 3309977478302976401}
   _yellowCarTapAudio: {fileID: 8300000, guid: 1f2926603c5ec444ab43f89d6af21c54, type: 3}
-  _anotherCarTapAudio: {fileID: 0}
+  _anotherCarTapAudio: {fileID: 8300000, guid: f10afd898075a40a7ba5f75912a62953, type: 3}
   _isTaxi: 0
 --- !u!195 &-4256086042514446799
 NavMeshAgent:

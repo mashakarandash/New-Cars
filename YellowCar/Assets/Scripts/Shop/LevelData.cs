@@ -5,10 +5,10 @@ public class LevelData
     public int SceneID;
     public bool IsLevelUnlock;
 
-    public LevelData(int levelSceneID)
+    public LevelData(int levelSceneID, bool isLevelUnlock = false)
     {
         SceneID = levelSceneID;
-        IsLevelUnlock = true;
+        IsLevelUnlock = isLevelUnlock;
     }
 
 }

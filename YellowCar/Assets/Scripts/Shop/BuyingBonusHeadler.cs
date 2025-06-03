@@ -25,6 +25,7 @@ public class BuyingBonusHeadler : MonoBehaviour
     [SerializeField] private ButtonSetting _buttonPrice;
     [SerializeField] private ButtonSetting _buttonChoose;
     [SerializeField] private ButtonSetting _buttonNowChoosed;
+    [SerializeField] private List<Vehicle> _cars;
 
 
     [Inject]
@@ -32,6 +33,29 @@ public class BuyingBonusHeadler : MonoBehaviour
     {
         _storage = storage;
         _masterSave = masterSave;
+    }
+
+    private void Start()
+    {
+        if(_masterSave.SaveData.IsPrefabVariant2Activated == false)
+        {
+            foreach (var car in _cars)
+            {
+                    car.PrefabVariant1.SetActive(true);
+                    car.PrefabVariant2.SetActive(false);
+                
+            }
+        }
+        else
+        {
+            foreach (var car in _cars)
+            {
+                car.PrefabVariant1.SetActive(false);
+                car.PrefabVariant2.SetActive(true);
+
+            }
+        }
+        
     }
 
     public void BuyLightningBonus()
@@ -153,6 +177,24 @@ public class BuyingBonusHeadler : MonoBehaviour
             _buttonChoose.Button.gameObject.SetActive(false);
             _buttonNowChoosed.Button.gameObject.SetActive(true);
             _buttonPrice.Button.gameObject.SetActive(false);
+
+            if (carData.CarName != "CarV1")
+            {
+                _masterSave.SaveData.IsPrefabVariant2Activated = true;
+            }
+            foreach (var car in _cars)
+            {
+                if (carData.CarName == "CarV1")
+                {
+                    car.PrefabVariant1.SetActive(true);
+                    car.PrefabVariant2.SetActive(false);
+                }
+                else
+                {
+                    car.PrefabVariant1.SetActive(false);
+                    car.PrefabVariant2.SetActive(true);
+                }
+            }
         }
     }
 
@@ -163,7 +205,28 @@ public class BuyingBonusHeadler : MonoBehaviour
             item.IsChoose = false;
         }
 
-        
+        if (carData.CarName == "CarV1")
+        {
+            _masterSave.SaveData.IsPrefabVariant2Activated = false;
+        }
+        else
+        {
+            _masterSave.SaveData.IsPrefabVariant2Activated = true;
+        }
+
+        foreach (var car in _cars)
+        {
+            if (carData.CarName == "CarV1")
+            {
+                car.PrefabVariant1.SetActive(true);
+                car.PrefabVariant2.SetActive(false);
+            }
+            else
+            {
+                car.PrefabVariant1.SetActive(false);
+                car.PrefabVariant2.SetActive(true);
+            }
+        }
         carData.IsChoose = true;
         _buttonChoose.Button.gameObject.SetActive(false);
         _buttonNowChoosed.Button.gameObject.SetActive(true);

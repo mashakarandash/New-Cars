@@ -36342,8 +36342,8 @@ MonoBehaviour:
   - {fileID: 111646800}
   _obstacleMove: {fileID: 963194231}
   _timeToMoveObstacle: 8
-  _timeToRundomSpawner1: 5
-  _timeToRundomSpawner2: 6
+  _timeToRundomSpawner1: 13
+  _timeToRundomSpawner2: 30
   _grandma: {fileID: 111646802}
 --- !u!4 &772949723
 Transform:

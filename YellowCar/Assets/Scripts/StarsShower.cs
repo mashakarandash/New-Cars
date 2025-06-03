@@ -6,6 +6,7 @@ using DG.Tweening;
 using TMPro;
 using Zenject;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class StarsShower : MonoBehaviour
 {
@@ -15,11 +16,13 @@ public class StarsShower : MonoBehaviour
     [SerializeField] private Sprite _starOver;
 
     private EventBus _eventBus;
+    private MasterSave _masterSave;
 
     [Inject]
-    private void Constract(EventBus eventBus)
+    private void Constract(EventBus eventBus, MasterSave masterSave)
     {
         _eventBus = eventBus;
+        _masterSave = masterSave;
     }
 
     void Start()
@@ -43,6 +46,7 @@ public class StarsShower : MonoBehaviour
 
     private void ShowStars(int starsCount)
     {
+        _masterSave.SaveData.SaveLevelCondition(SceneManager.GetActiveScene().buildIndex, starsCount);
         StartCoroutine(AnimateStarsApperanceCoroutine(starsCount));
     }
 

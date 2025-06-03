@@ -15,6 +15,8 @@ public abstract class Vehicle : MonoBehaviour
     public bool GreenLightDetected = true;
     public bool IsStilledByUFO;
     public bool CanPlayTapAudio = true;
+    public GameObject PrefabVariant1;
+    public GameObject PrefabVariant2;
 
     private int _speed = 2;
     private bool _needOvertake;
@@ -38,6 +40,7 @@ public abstract class Vehicle : MonoBehaviour
     {
         if(CanPlayTapAudio)
         {
+            Debug.Log(IsTemporaryYellowCar + "имя " + gameObject.name);
             if (IsTemporaryYellowCar)
             {
                 PlayTapAudio(_yellowCarTapAudio);
@@ -72,6 +75,7 @@ public abstract class Vehicle : MonoBehaviour
 
     protected void PlayTapAudio(AudioClip tapClip)
     {
+        Debug.Log($"звук пригрывается под названием{tapClip.name} имя динамиков {AudioEffects.gameObject.name}");
         AudioEffects.PlayOneShot(tapClip);
     }
 

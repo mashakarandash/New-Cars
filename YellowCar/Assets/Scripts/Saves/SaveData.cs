@@ -79,9 +79,29 @@ public class SaveData
     }
     #endregion
 
-    public LevelData[] SavedLevelData;
+    public LevelData[] SavedLevelData = new LevelData[]
+    {
+        new LevelData(1, true),
+        new LevelData(2),
+        new LevelData(3),
+        new LevelData(4),
+        new LevelData(5),
+        new LevelData(6),
+        new LevelData(7),
+        new LevelData(8),
+        new LevelData(9),
+        new LevelData(10),
+        new LevelData(11),
+        new LevelData(12),
+        new LevelData(13),
+        new LevelData(14),
+        new LevelData(15),
+        new LevelData(16),
+    };
+
     public int LastPastLevel;
     public CarShopModelData[] CarSaves;
+    public bool IsPrefabVariant2Activated;
 
     public void AddMoney(int moneyCount)
     {
@@ -110,5 +130,25 @@ public class SaveData
             
         }
 
+    }
+
+    public void SaveLevelCondition(int levelID, int ganeStar)
+    {
+        LevelData levelData = SavedLevelData.FirstOrDefault(name => name.SceneID == levelID);
+        if (levelData != null)
+        {
+            levelData.IsLevelPast = true;
+            levelData.StarsInLevel = ganeStar;
+            LevelData levelDataNext = SavedLevelData.FirstOrDefault(name => name.SceneID == levelID + 1);
+
+            if (levelDataNext != null)
+            {
+                levelDataNext.IsLevelUnlock = true;
+            }
+        }
+        else
+        {
+            throw new System.Exception("уровень под номером " + levelID + " не найден ");
+        }
     }
 }

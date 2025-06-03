@@ -11,6 +11,7 @@ public class SceneInstaller : MonoInstaller
     [SerializeField] private AudioSource _audioEffects;
     [SerializeField] private GameStarter _gameStarter;
     [SerializeField] private List<LightningPart> _lightnings;
+    [SerializeField] private int _bestTime;
 
     public override void InstallBindings()
     {
@@ -21,6 +22,12 @@ public class SceneInstaller : MonoInstaller
         //  BindCoinsChanger();
         BindAudioEffects();
         BindGameStarter();
+        Container
+            .Bind<int>()
+            .WithId("BestTime")
+            .FromInstance(_bestTime)
+            .AsCached()
+            .NonLazy();
         Container
             .Bind<List<LightningPart>>()
             .FromInstance(_lightnings)
